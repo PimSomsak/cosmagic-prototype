@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 1df95386272beda47861d883cef9b7b5
+  productGUID: f0116d4ad6d3e7b45a985600ec5caaca
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: CosPrototype
+  productName: Cosmagic-2D-Prototype
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -596,14 +596,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: CosPrototype
+  metroPackageName: Cosmagic-2D-Prototype
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: CosPrototype
+  metroApplicationDescription: Cosmagic-2D-Prototype
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -674,11 +674,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 357be102-caee-4c71-a130-7d6e270342dc
+  cloudProjectId: 3881f514-2752-48a1-9383-d8d81992a8bf
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: CosPrototype
-  organizationId: unity_a417867f7d877fe99922
+  projectName: Cosmagic-2D-Prototype
+  organizationId: neawz
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
