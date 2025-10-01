@@ -9,7 +9,7 @@ public class Customer : ScriptableObject
     public Vector3 colorMix = new Vector3(0, 0, 0);
 
     // Active
-    public bool isCurseResist;
+    public CurseResistace isCurseResist;
     public UniqueMagic magic;
 
     // Solvent
@@ -17,6 +17,6 @@ public class Customer : ScriptableObject
     public Vector2 durabilityRange = new Vector2(1, 4);
 
     // Additive
-    public bool isGloss;
+    public Gloss isGloss;
     public Vector2 allergyRange = new Vector2(1, 4);
 }

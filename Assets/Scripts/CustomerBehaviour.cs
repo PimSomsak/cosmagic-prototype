@@ -13,18 +13,23 @@ public class CustomerBehaviour : MonoBehaviour
     public bool EvaluatePotion(Potion potion)
     {
         float colorDistance = Vector3.Distance(potion.color, customerData.colorMix);
-        bool colorOK = colorDistance <= 0;
-        bool curseOK = potion.curseResistance || !customerData.isCurseResist;
-        bool magicOK = potion.uniqueMagic == customerData.magic|| customerData.magic == UniqueMagic.None;
+        bool colorOK = colorDistance == 0;
+        bool curseOK = potion.curseResistance == customerData.isCurseResist || customerData.isCurseResist == CurseResistace.Any;
+        bool magicOK = potion.uniqueMagic == customerData.magic || customerData.magic == UniqueMagic.Any;
         bool moistureOK = potion.moisture >= customerData.moistureRange.x && potion.moisture <= customerData.moistureRange.y;
         bool durabilityOK = potion.durability >= customerData.durabilityRange.x && potion.durability <= customerData.durabilityRange.y;
-        bool glossOK = potion.gloss || !customerData.isGloss;
+        bool glossOK = potion.gloss == customerData.isGloss || customerData.isGloss == Gloss.Any;
         bool allergyOK = potion.allergy >= customerData.allergyRange.x && potion.allergy <= customerData.allergyRange.y;
+
+        if (customerData.colorMix.x == 5)
+        {
+            colorOK = true;
+        }
 
         return colorOK && curseOK && magicOK && moistureOK && durabilityOK && glossOK && allergyOK;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Potion potion = other.GetComponent<Potion>();
         if (potion != null)

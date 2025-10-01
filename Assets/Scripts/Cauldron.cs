@@ -10,11 +10,11 @@ public class Cauldron : MonoBehaviour
     private Dictionary<IngredientType, Ingredients> selectedIngredients = new();
 
     public Vector3 finalColor;
-    public bool finalCurseResist; public UniqueMagic finalMagic;
+    public CurseResistace finalCurseResist; public UniqueMagic finalMagic;
     public int finalMoisture; public int finalDurability;
-    public bool finalGloss; public int finalAllergy;
+    public Gloss finalGloss; public int finalAllergy;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         IngredientData data = other.GetComponent<IngredientData>();
         if (data != null)
@@ -37,28 +37,34 @@ public class Cauldron : MonoBehaviour
     {
         // Get 0 Stats
         finalColor = new Vector3(0, 0, 0);
-        finalCurseResist = false; finalMagic = UniqueMagic.None;
+        finalCurseResist = CurseResistace.Any; finalMagic = UniqueMagic.Any;
         finalMoisture = 0; finalDurability = 0;
-        finalGloss = false; finalAllergy = 0;
+        finalGloss = Gloss.Any; finalAllergy = 0;
 
         foreach (var ingredient in selectedIngredients.Values)
         {
             finalColor += ingredient.color;
+            finalColor = new Vector3(
+                Mathf.Clamp(finalColor.x, 0f, 1f),
+                Mathf.Clamp(finalColor.y, 0f, 1f),
+                Mathf.Clamp(finalColor.z, 0f, 1f));
 
-            finalCurseResist |= ingredient.curseResistance;
-            foreach (var ing in selectedIngredients.Values)
+            if (ingredient.type == IngredientType.Active && ingredient.curseResistance != CurseResistace.Any)
             {
-                if (ing.type == IngredientType.Active && ing.uniqueMagic != UniqueMagic.None)
-                {
-                    finalMagic = ing.uniqueMagic;
-                    break;
-                }
+                finalCurseResist = ingredient.curseResistance;
+            }
+            if (ingredient.type == IngredientType.Active && ingredient.uniqueMagic != UniqueMagic.Any)
+            {
+                finalMagic = ingredient.uniqueMagic;
             }
 
             finalMoisture += ingredient.moisture;
             finalDurability += ingredient.durability;
             
-            finalGloss |= ingredient.gloss;
+            if (ingredient.type == IngredientType.Additive && ingredient.gloss != Gloss.Any)
+            {
+                finalGloss = ingredient.gloss;
+            }
             finalAllergy += ingredient.allergy;
         }
     }
@@ -68,9 +74,9 @@ public class Cauldron : MonoBehaviour
         Debug.Log($"Complete!");
         // Reset totalAttributes
         finalColor = new Vector3(0, 0, 0);
-        finalCurseResist = false; finalMagic = new UniqueMagic();
+        finalCurseResist = new CurseResistace(); finalMagic = new UniqueMagic();
         finalMoisture = 0; finalDurability = 0;
-        finalGloss = false; finalAllergy = 0;
+        finalGloss = new Gloss(); finalAllergy = 0;
     }
 
     public void SpawnPotion()

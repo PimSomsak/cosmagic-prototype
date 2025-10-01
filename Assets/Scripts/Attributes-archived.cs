@@ -1,4 +1,4 @@
-[System.Serializable]
+/*[System.Serializable]
 public class QualityStats
 {
     public float moisture;
@@ -20,4 +20,4 @@ public class MagicStats
     public float fireResistance;
     public float frostResistance;
     public float curseResistance;
-}
+}*/

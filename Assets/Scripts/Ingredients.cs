@@ -1,6 +1,8 @@
 using UnityEngine;
-public enum IngredientType { Active, Additive, Solvent }
-public enum UniqueMagic { None, Invisible, Luminous, Regenerate, StoneSkin}
+public enum IngredientType { Active, Solvent, Additive }
+public enum CurseResistace { Any, True, False }
+public enum UniqueMagic { Any, None, Invisible, Luminous, Regenerate, StoneSkin}
+public enum Gloss {  Any, True, False }
 [CreateAssetMenu(fileName = "New Ingredient", menuName = "Cosmagic/Ingredient")]
 public class Ingredients : ScriptableObject
 {
@@ -11,7 +13,7 @@ public class Ingredients : ScriptableObject
     public Vector3 color = new Vector3(0, 0, 0);
 
     // Active
-    public bool curseResistance;
+    public CurseResistace curseResistance;
     public UniqueMagic uniqueMagic;
 
     // Solvent
@@ -19,6 +21,6 @@ public class Ingredients : ScriptableObject
     public int durability; // 1-3
 
     // Additive
-    public bool gloss; // 1-4
+    public Gloss gloss;
     public int allergy; // 1-4
 }

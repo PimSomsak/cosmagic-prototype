@@ -9,7 +9,7 @@ public class Potion : MonoBehaviour
     public Vector3 color = new Vector3(0, 0, 0);
 
     // Active
-    public bool curseResistance;
+    public CurseResistace curseResistance;
     public UniqueMagic uniqueMagic;
 
     // Solvent
@@ -17,10 +17,10 @@ public class Potion : MonoBehaviour
     public int durability; // 1-3
 
     // Additive
-    public bool gloss; // 1-4
+    public Gloss gloss;
     public int allergy; // 1-4
 
-    public void Initialize(Vector3 color, bool curse, UniqueMagic magic, int moisture, int durability, bool gloss, int allergy)
+    public void Initialize(Vector3 color, CurseResistace curse, UniqueMagic magic, int moisture, int durability, Gloss gloss, int allergy)
     {
         this.color = color;
         curseResistance = curse;

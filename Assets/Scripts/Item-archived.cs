@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class Item : ScriptableObject
 {
@@ -11,4 +11,4 @@ public class Item : ScriptableObject
     public QualityStats quality;
     public BeautyStats beauty;
     public MagicStats magic;
-}
+}*/

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CustomerSpawner : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class CustomerSpawner : MonoBehaviour
     private bool hasSpawned = false;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !hasSpawned)
+        if ((Keyboard.current.spaceKey.wasPressedThisFrame) && !hasSpawned)
         {
             SpawnCustomer();
         }
