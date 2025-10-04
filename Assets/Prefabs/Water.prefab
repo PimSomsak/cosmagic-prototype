@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8755866093361547448}
   - component: {fileID: 8719415441583575908}
   - component: {fileID: 7920049054762027434}
+  - component: {fileID: -4522058878757800543}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -152,3 +153,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 10.000001
+--- !u!114 &-4522058878757800543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674071970000324738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 11400000, guid: 50ade6df2cf159c4d8f045b8fb66de58, type: 2}

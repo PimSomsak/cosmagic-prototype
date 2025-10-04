@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PourByTilt
   jar: {fileID: 1686311189647885725}
-  ingredientPrefab: {fileID: 1674071970000324738, guid: e89139b56635e6947a38b1e107b70a04, type: 3}
+  ingredientPrefab: {fileID: 1674071970000324738, guid: d64e0cfe8fea32342b4b38acd6c9ce88, type: 3}
   spawnPoint: {fileID: 4245415719146545948}
   spawnInterval: 0.2
   tiltThreshold: 60

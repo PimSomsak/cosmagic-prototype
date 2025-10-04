@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7580049802726012044}
   - component: {fileID: 5414017213337952530}
   - component: {fileID: -1599960349502779837}
+  - component: {fileID: -18400532850651785}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Orange
@@ -167,3 +168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 0
   rotationMax: 360
+--- !u!114 &-18400532850651785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957598340261457316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 11400000, guid: 4722d7ac90a39a547abec69f119598b4, type: 2}

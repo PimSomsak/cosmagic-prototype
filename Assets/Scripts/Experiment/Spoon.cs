@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Spoon : MonoBehaviour
 {
-    public CauldronRecipe cauldron;
+    public Cauldron cauldron;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5901133483259214588}
   - component: {fileID: 2458493657521668621}
   - component: {fileID: 917370188977399110}
+  - component: {fileID: 6127404088300166566}
   m_Layer: 0
   m_Name: Black
   m_TagString: Black
@@ -167,3 +168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 0
   rotationMax: 360
+--- !u!114 &6127404088300166566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7721193089507932867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 0}

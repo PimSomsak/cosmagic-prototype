@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2714847879745839080}
   - component: {fileID: 8420761760972808273}
   - component: {fileID: 919599359015815009}
+  - component: {fileID: 8874362083635340475}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Yellow
@@ -167,3 +168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 0
   rotationMax: 360
+--- !u!114 &8874362083635340475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32203739752959790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 11400000, guid: 4f93e656513170a4e997cb67d6d3a8e0, type: 2}

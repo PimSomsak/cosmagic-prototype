@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 77196174507337603}
   - component: {fileID: 1093249757675965269}
   - component: {fileID: -7585324024332021404}
+  - component: {fileID: 3106412794599684158}
   m_Layer: 0
   m_Name: Purple
   m_TagString: Purple
@@ -167,3 +168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 0
   rotationMax: 360
+--- !u!114 &3106412794599684158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696862440065638988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 11400000, guid: 57c571abf1bea174cadea672ae9d6092, type: 2}

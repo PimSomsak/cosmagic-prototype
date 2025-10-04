@@ -10,6 +10,7 @@ public class CustomerBehaviour : MonoBehaviour
         Debug.Log($"Customer {customerData.customerName} is ready with budget {customerData.budget}");
     }
 
+    // Mix Data
     public bool EvaluatePotion(Potion potion)
     {
         float colorDistance = Vector3.Distance(potion.color, customerData.colorMix);
@@ -29,6 +30,7 @@ public class CustomerBehaviour : MonoBehaviour
         return colorOK && curseOK && magicOK && moistureOK && durabilityOK && glossOK && allergyOK;
     }
 
+    // Check Potion Collide
     private void OnTriggerEnter2D(Collider2D other)
     {
         Potion potion = other.GetComponent<Potion>();

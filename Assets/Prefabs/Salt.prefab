@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6742149212898208165}
   - component: {fileID: 3335025508896665638}
   - component: {fileID: 903834850584438327}
+  - component: {fileID: 2034583560350310054}
   m_Layer: 0
   m_Name: Salt
   m_TagString: Salt
@@ -152,3 +153,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2034583560350310054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4684155761346803787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca2e671dd7f139418f772d8e4e3ce14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientData: {fileID: 11400000, guid: 4ca525c274b49bd4da3ca822708dd51a, type: 2}

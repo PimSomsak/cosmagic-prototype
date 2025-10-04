@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShakeByMovement
   jar: {fileID: 7444309157444592206}
-  ingredientPrefab: {fileID: 4684155761346803787, guid: bada663273888e34ab8302a187a41986, type: 3}
+  ingredientPrefab: {fileID: 4684155761346803787, guid: 5acf8078d41493449859bf226f877430, type: 3}
   spawnPoint: {fileID: 7258578734867299480}
   spawnInterval: 0.2
   tiltThreshold: 45
