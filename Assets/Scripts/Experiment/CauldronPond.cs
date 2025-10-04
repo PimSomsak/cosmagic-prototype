@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Cauldron : MonoBehaviour
+public class CauldronPond : MonoBehaviour
 {
     [System.Serializable]
     public class IngredientThreshold
