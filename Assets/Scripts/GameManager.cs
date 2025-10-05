@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager Instance { get; private set; }
+    private void Awake()
     {
         
-    }
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
-    // Update is called once per frame
-    void Update()
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+    
+
+    public int playerMoney = 0;
+
+    public void AddMoney(int amount)
     {
-        
+        playerMoney += amount;
+        Debug.Log("Money: " + playerMoney);
     }
 }
