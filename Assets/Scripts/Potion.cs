@@ -14,7 +14,7 @@ public class Potion : MonoBehaviour
 
     // Solvent
     public int moisture; // 1-4
-    public int durability; // 1-3
+    public int durability; // 1-4
 
     // Additive
     public Gloss gloss;
