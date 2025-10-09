@@ -109,6 +109,8 @@ public class Cauldron : MonoBehaviour
         finalCurseResist = new CurseResistace(); finalMagic = new UniqueMagic();
         finalMoisture = 0; finalDurability = 0;
         finalGloss = new Gloss(); finalAllergy = 0;
+
+        hits = 0;
     }
 
     public void SpawnPotion()

@@ -29,10 +29,11 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI playerReputationText;
     public int playerReputationValue;
 
+    //public CustomerBehaviour feedback;
 
     void Start()
     {
-        
+
     }
 
     
