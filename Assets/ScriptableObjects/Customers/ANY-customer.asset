@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c7b7e8c94a2f4f449fab853e9444dc8, type: 3}
-  m_Name: NewCustomer
+  m_Name: ANY-customer
   m_EditorClassIdentifier: 
   customerName: 
-  budget: 0
-  colorMix: {x: 0, y: 0, z: 0}
+  budget: 100
+  colorMix: {x: 5, y: 5, z: 5}
   isCurseResist: 0
   magic: 0
   moistureRange: {x: 1, y: 4}

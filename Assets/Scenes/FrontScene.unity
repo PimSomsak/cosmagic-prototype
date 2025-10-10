@@ -842,6 +842,7 @@ GameObject:
   - component: {fileID: 780425455}
   - component: {fileID: 780425457}
   - component: {fileID: 780425456}
+  - component: {fileID: 780425458}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -891,6 +892,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoney: 0
+--- !u!114 &780425458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780425454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a221302cbd18364584648ff8eb5cbbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 4000
 --- !u!1 &872894551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,8 +2462,8 @@ MonoBehaviour:
   terminationValue: 0
   reputationValueText: {fileID: 1058578315}
   reputationValue: 0
-  playerMoneyText: {fileID: 0}
-  playerMoney: 0
+  playerMoneyText: {fileID: 946082269}
+  playerMoney: {fileID: 780425458}
   playerReputationText: {fileID: 0}
   playerReputationValue: 0
 --- !u!1 &1980308459

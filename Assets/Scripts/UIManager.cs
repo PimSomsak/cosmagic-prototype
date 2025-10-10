@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     [Header("Player Info")]
 
     public TextMeshProUGUI playerMoneyText;
-    public int playerMoney;
+    public Wallet playerMoney;
 
     public TextMeshProUGUI playerReputationText;
     public int playerReputationValue;
@@ -44,5 +44,7 @@ public class UIManager : MonoBehaviour
         //budgetValueText.text = budgetValue.ToString();
         //terminationValueText.text = terminationValue.ToString();
         //reputationValueText.text = reputationValue.ToString();
+
+        playerMoneyText.text = playerMoney.money.ToString();
     }
 }

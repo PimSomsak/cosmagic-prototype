@@ -111,6 +111,7 @@ public class Cauldron : MonoBehaviour
         finalGloss = new Gloss(); finalAllergy = 0;
 
         hits = 0;
+        selectedIngredients.Clear();
     }
 
     public void SpawnPotion()

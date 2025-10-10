@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728f78c309b194a48bfeaef58daf8177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customerData: {fileID: 11400000, guid: 9822578c7c0870e4e85e9bfad22ddf8f, type: 2}
+  customerData: {fileID: 11400000, guid: a7ecfebc395ac8c4f8f1fb7162c9c2ad, type: 2}
 --- !u!61 &176455452
 BoxCollider2D:
   m_ObjectHideFlags: 0
