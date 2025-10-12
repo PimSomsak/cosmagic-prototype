@@ -8,6 +8,8 @@ public class SpawnOnClick : MonoBehaviour
     [Header("spawnPoint")]
     public Transform spawnPoint;
 
+    public float price;
+
     void OnMouseDown()
     {
         if (prefabToSpawn != null)
@@ -15,6 +17,9 @@ public class SpawnOnClick : MonoBehaviour
             Vector3 pos = spawnPoint != null ? spawnPoint.position : transform.position;
             GameObject newObj = Instantiate(prefabToSpawn, pos, Quaternion.identity);
             Debug.Log($"Spawned prefab with tag {newObj.tag}!");
+
+            Player.Instance.Spend(price);
+            Debug.Log($"Spend {price}, Total Money: {Player.Instance.money}");
         }
     }
 }

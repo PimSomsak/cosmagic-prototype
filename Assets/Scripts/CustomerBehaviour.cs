@@ -1,15 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomerBehaviour : MonoBehaviour
 {
     public Customer customerData;
+    CustomerSpawner customerSpawner;
 
-    public void Initialize(Customer data)
+    private void Start()
     {
-        customerData = data;
-        Debug.Log($"Customer {customerData.customerName} is ready with budget {customerData.budget}");
+        customerSpawner = FindAnyObjectByType<CustomerSpawner>();
     }
+
     public class EvaluationResult
     {
         public bool colorOK;
@@ -26,15 +28,15 @@ public class CustomerBehaviour : MonoBehaviour
         {
             List<string> issues = new List<string>();
 
-            if (!colorOK) issues.Add("❌ Color");
-            if (!curseOK) issues.Add("❌ CurseResist");
-            if (!magicOK) issues.Add("❌ Magic");
-            if (!moistureOK) issues.Add("❌ Moisture");
-            if (!durabilityOK) issues.Add("❌ Durability");
-            if (!glossOK) issues.Add("❌ Gloss");
-            if (!allergyOK) issues.Add("❌ Allergy");
+            if (!colorOK) issues.Add("Color Incorrect");
+            if (!curseOK) issues.Add("CurseResist Incorrect");
+            if (!magicOK) issues.Add("Magic Incorrect");
+            if (!moistureOK) issues.Add("Moisture Incorrect");
+            if (!durabilityOK) issues.Add("Durability Incorrect");
+            if (!glossOK) issues.Add("Gloss Incorrect");
+            if (!allergyOK) issues.Add("Allergy Incorrect");
 
-            return issues.Count == 0 ? "✅ ALL CLEAR!" : string.Join("\n", issues);
+            return issues.Count == 0 ? "ALL CLEAR!" : string.Join("\n", issues);
         }
     }
 
@@ -62,12 +64,20 @@ public class CustomerBehaviour : MonoBehaviour
         if (potion != null)
         {
             var feedback = EvaluatePotion(potion);
-            Debug.Log(feedback.GetFeedback());
+
+            // Feedback Display
+            FeedbackBubble feedbackBubble = FindAnyObjectByType<FeedbackBubble>();
+            if (feedbackBubble != null)
+            {
+                feedbackBubble.ShowFeedback(feedback);
+            }
 
             if (feedback.IsSatisfied)
             {
                 Debug.Log("Customer is satisfied with the potion!");
-                Wallet.Instance.AddMoney(customerData.budget);
+                Player.Instance.AddMoney(customerData.budget);
+                StartCoroutine(DelayDestroyCustomer(3));
+                customerSpawner.hasSpawned = false;
             }
             else
             {
@@ -75,6 +85,15 @@ public class CustomerBehaviour : MonoBehaviour
             }
 
             Destroy(other.gameObject);
+        }
+    }
+    IEnumerator DelayDestroyCustomer(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        GameObject target = GameObject.FindWithTag("Customer");
+        if (target != null)
+        {
+            Destroy(target);
         }
     }
 }

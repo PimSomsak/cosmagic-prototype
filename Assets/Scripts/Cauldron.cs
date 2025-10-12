@@ -9,10 +9,6 @@ public class Cauldron : MonoBehaviour
 
     private Dictionary<IngredientType, Ingredients> selectedIngredients = new();
 
-    // ตรวจกวน
-    private Vector2 lastMousePos;
-    private float moveThreshold = 5f;
-    private bool isDragging = false;
     // ช้อนอยู่ในหม้อมั้ย
     private bool spoonInside = false;
 

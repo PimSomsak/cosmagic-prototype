@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4696862440065638988, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 3
 --- !u!61 &32020971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -518,8 +519,6 @@ GameObject:
   m_Component:
   - component: {fileID: 176455449}
   - component: {fileID: 176455450}
-  - component: {fileID: 176455452}
-  - component: {fileID: 176455451}
   m_Layer: 0
   m_Name: backOrder
   m_TagString: Untagged
@@ -597,65 +596,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &176455451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176455448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728f78c309b194a48bfeaef58daf8177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customerData: {fileID: 11400000, guid: a7ecfebc395ac8c4f8f1fb7162c9c2ad, type: 2}
---- !u!61 &176455452
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176455448}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.21, y: 2.9}
-    newSize: {x: 3.21, y: 2.9}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.21, y: 2.9}
-  m_EdgeRadius: 0
 --- !u!1 &177419494
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 2054794449328273393, guid: e585f1ee2ec437548a40fe19a8d7dac4, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 1
 --- !u!1 &198432663
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 1
 --- !u!61 &198432666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2159,6 +2101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 7337789654710329703, guid: 232f2f9d135336e479ef47e449bdef6d, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 3
 --- !u!61 &693505589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2437,6 +2380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 902887326173704114, guid: c157ef65949623b438f39f1e68a8858a, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!1 &781517044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,6 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4867311188174046355, guid: 5a335c5a23ae01f4299f2f5cbed1c7a3, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!61 &895688835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3324,6 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 2943108572913765144, guid: b8f161627119581488b0feeefd7b6650, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 1
 --- !u!61 &1237129860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3755,6 +3701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 5877572568445101785, guid: b361fc99fd33e1b4386f3ff3c37d41a9, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 3
 --- !u!1 &1472907814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,6 +3879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 1420590779715576181, guid: 45659447aa0de894ea5339ed8707ad7a, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!1 &1487294750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,6 +4680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 3957598340261457316, guid: 33d016befdd32c94cbd24fc1b626162a, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!61 &1777461851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4909,6 +4858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 7583506292311238680, guid: 39f09946ef33c1c4bbf8a60f4e3a0c1f, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!61 &1843535256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5128,7 +5078,7 @@ GameObject:
   - component: {fileID: 1907893266}
   - component: {fileID: 1907893267}
   - component: {fileID: 1907893269}
-  - component: {fileID: 1907893268}
+  - component: {fileID: 1907893270}
   m_Layer: 0
   m_Name: MortarFront
   m_TagString: Mortar
@@ -5252,40 +5202,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.442462, y: 0.77047944}
   m_EdgeRadius: 0
---- !u!114 &1907893268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907893264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d4537a5b2ae90640ab50a8088d63567, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recipes:
-  - recipeName: RedtoGreenn
-    inputPrefabs:
-    - {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
-    requiredHits: 8
-    outputPrefab: {fileID: 6638564405510466314, guid: 0361049662064fc45a137574a5b74f9a, type: 3}
-  - recipeName: OrangetoBlue
-    inputPrefabs:
-    - {fileID: 3957598340261457316, guid: 33d016befdd32c94cbd24fc1b626162a, type: 3}
-    requiredHits: 8
-    outputPrefab: {fileID: 9106694135987621579, guid: a0d8b5b8fba76ef41aaf37c34a06044a, type: 3}
-  - recipeName: YellowtoGreen
-    inputPrefabs:
-    - {fileID: 32203739752959790, guid: 9b6ad8e3b98965946b73e4ba6c35d7d5, type: 3}
-    requiredHits: 8
-    outputPrefab: {fileID: 6638564405510466314, guid: 0361049662064fc45a137574a5b74f9a, type: 3}
-  - recipeName: PurpleoBlack
-    inputPrefabs:
-    - {fileID: 4696862440065638988, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
-    requiredHits: 8
-    outputPrefab: {fileID: 7721193089507932867, guid: 6ed71cd99b4579341a6a5a339cbe65d5, type: 3}
-  grindProgressSlider: {fileID: 561263063}
 --- !u!50 &1907893269
 Rigidbody2D:
   serializedVersion: 5
@@ -5313,6 +5229,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1907893270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907893264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953fc36da90d7934f9f9fcb364e16ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918133951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,6 +5651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 32203739752959790, guid: 9b6ad8e3b98965946b73e4ba6c35d7d5, type: 3}
   spawnPoint: {fileID: 1671450456}
+  price: 2
 --- !u!61 &1961169408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6025,12 +5954,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2026986723}
   - component: {fileID: 2026986722}
-  - component: {fileID: 2026986726}
   - component: {fileID: 2026986725}
   - component: {fileID: 2026986724}
   - component: {fileID: 2026986729}
   - component: {fileID: 2026986728}
   - component: {fileID: 2026986727}
+  - component: {fileID: 2026986730}
   m_Layer: 0
   m_Name: Pestle_0
   m_TagString: Pestle
@@ -6149,19 +6078,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMin: -5
   rotationMax: 15
---- !u!114 &2026986726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026986721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77dfb3f92b3707645925906c35c9f4e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mortar: {fileID: 1907893268}
 --- !u!58 &2026986727
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6270,6 +6186,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.17030668, y: 0.89564633}
   m_Radius: 0.29272866
+--- !u!114 &2026986730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026986721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d09d6c2387ca1438dd512a0939b377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2055250519
 GameObject:
   m_ObjectHideFlags: 0

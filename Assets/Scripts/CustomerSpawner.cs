@@ -3,10 +3,9 @@ using UnityEngine.InputSystem;
 
 public class CustomerSpawner : MonoBehaviour
 {
-    public GameObject customerPrefab;
-    public Transform spawnPoint;
+    public GameObject[] customerPrefab;
 
-    private bool hasSpawned = false;
+    public bool hasSpawned;
     void Update()
     {
         if ((Keyboard.current.spaceKey.wasPressedThisFrame) && !hasSpawned)
@@ -17,7 +16,8 @@ public class CustomerSpawner : MonoBehaviour
 
     void SpawnCustomer()
     {
-        Instantiate(customerPrefab, spawnPoint.position, Quaternion.identity);
+        int r = Random.Range(0, customerPrefab.Length);
+        Instantiate(customerPrefab[r], new Vector3(0 , 0, 0), Quaternion.identity);
         hasSpawned = true;
         Debug.Log($"Customer Spawn!");
     }

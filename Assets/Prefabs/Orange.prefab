@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5414017213337952530}
   - component: {fileID: -1599960349502779837}
   - component: {fileID: -18400532850651785}
+  - component: {fileID: -4475097871434545227}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Orange
@@ -181,3 +182,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientData: {fileID: 11400000, guid: 4722d7ac90a39a547abec69f119598b4, type: 2}
+--- !u!114 &-4475097871434545227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957598340261457316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc544943d56af540b8dfbbc84fad063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 1
+  rawSprite: {fileID: -855298285791758126, guid: bcc9c4ab9536d654f9e143ff79f5494c, type: 3}
+  crushedSprite: {fileID: 3465286685962602723, guid: b1fbfeb532a507d4b815bfcdd034af03, type: 3}
+  hitsNeeded: 3

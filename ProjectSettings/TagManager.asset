@@ -3,7 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Cauldron
+  - Spoon
+  - Mortar
+  - Pestle
+  - Orange
+  - Yellow
+  - Purple
+  - Red
+  - JarOrange
+  - SaltYellow
+  - JarBlue
+  - SaltBlue
+  - SaltPurple
+  - SaltGreen
+  - JarPink
+  - Green
+  - Blue
+  - Black
+  - Water
+  - Salt
+  - Ingredient
+  - Customer
   layers:
   - Default
   - TransparentFX

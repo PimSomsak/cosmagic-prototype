@@ -3,7 +3,11 @@ using UnityEngine;
 public class Customer : ScriptableObject
 {
     public string customerName;
+    [TextArea] public string description;
     public float budget;
+    public float terminationFee;
+    public float reputation;
+
 
     // Color Check
     public Vector3 colorMix = new Vector3(0, 0, 0);

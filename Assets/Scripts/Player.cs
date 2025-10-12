@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class Wallet : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public static Wallet Instance;
-    public float money = 4000f;
+    public static Player Instance;
+    public float money = 50f;
+    public float playerReputation = 0;
 
     private void Awake()
     {
@@ -26,5 +27,11 @@ public class Wallet : MonoBehaviour
     {
         money += amount;
         Debug.Log($"Received {amount} coins. Total: {money}");
+    }
+
+    public void AddReputation(float amount)
+    {
+        playerReputation += amount;
+        Debug.Log($"Recieved {amount} of repuations. Total: {playerReputation}");
     }
 }
