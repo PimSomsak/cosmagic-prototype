@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c7b7e8c94a2f4f449fab853e9444dc8, type: 3}
-  m_Name: William Blackwood
+  m_Name: Roland de Clare
   m_EditorClassIdentifier: 
-  customerName: William Blackwood
-  description: I want a lotion with good moisturizing properties.
+  customerName: Roland de Clare
+  description: "A lotion that\u2019s not oily, not magic-resistant, and not moisturizing
+    either\u2026 What on earth am I even asking for?"
   budget: 30
   terminationFee: 5
   reputation: 1
   colorMix: {x: 5, y: 5, z: 5}
-  isCurseResist: 0
+  isCurseResist: 2
   magic: 0
-  moistureRange: {x: 3, y: 4}
+  moistureRange: {x: 1, y: 1}
   durabilityRange: {x: 1, y: 4}
-  isGloss: 0
+  isGloss: 2
   allergyRange: {x: 1, y: 4}

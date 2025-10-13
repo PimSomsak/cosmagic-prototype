@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 591506922}
   - component: {fileID: 591506921}
   - component: {fileID: 591506923}
+  - component: {fileID: 591506924}
   m_Layer: 0
   m_Name: Summoner
   m_TagString: Untagged
@@ -387,7 +388,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerPrefab:
   - {fileID: 2866477072737020983, guid: dbc0969014c0e0147b4c0339b49beb2c, type: 3}
+  - {fileID: 661181870377389002, guid: ea451be7717e56f40ab566c9805d665c, type: 3}
+  - {fileID: 4465556565939516232, guid: b12d3ee12f9cf8345bba2a0a87c3b3ea, type: 3}
+  - {fileID: 2741150457151854407, guid: 5184624549114954a9cf7870cb7ca74f, type: 3}
+  - {fileID: 1546495843168852314, guid: f83771b96f11a3e4ca05c6471cd966b8, type: 3}
+  - {fileID: 5601990980825641410, guid: dc85ade679f1f4348a7a539f398a924f, type: 3}
+  - {fileID: 2251383458651581851, guid: 192f6d556f07183498075ad86a6fa320, type: 3}
+  - {fileID: 8912829776824204133, guid: f812c64367ca40642a9e1735f7ce17df, type: 3}
+  - {fileID: 2640599958464626120, guid: d5d17313e470dad4fa31f128262052e4, type: 3}
+  - {fileID: 291520034638286031, guid: 03af57ccf32df404eae3442737c85cda, type: 3}
+  - {fileID: 5647984623170120650, guid: c855a917dd1b2254287a8647a81107df, type: 3}
+  - {fileID: 3473517543792920006, guid: 2460858de2a24784a92db69814de3721, type: 3}
+  - {fileID: 4614262417123438536, guid: b6ea2d5e448c651429d4e32c3afdc068, type: 3}
   hasSpawned: 0
+--- !u!70 &591506924
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591506920}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.016718388, y: 0}
+  m_Size: {x: 0.87771606, y: 1.5464501}
+  m_Direction: 0
 --- !u!1 &780425454
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7b7e8c94a2f4f449fab853e9444dc8, type: 3}
   m_Name: ANY-customer
   m_EditorClassIdentifier: 
-  customerName: 
-  budget: 100
+  customerName: ANY customer
+  description: Any any any just gimme a lotion.
+  budget: 30
+  terminationFee: 5
+  reputation: 1
   colorMix: {x: 5, y: 5, z: 5}
   isCurseResist: 0
   magic: 0

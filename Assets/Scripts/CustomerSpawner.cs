@@ -6,13 +6,21 @@ public class CustomerSpawner : MonoBehaviour
     public GameObject[] customerPrefab;
 
     public bool hasSpawned;
-    void Update()
+
+
+    void OnMouseDown()
     {
-        if ((Keyboard.current.spaceKey.wasPressedThisFrame) && !hasSpawned)
-        {
-            SpawnCustomer();
-        }
+        if (!hasSpawned)SpawnCustomer();  
     }
+
+
+    //void Update()
+    //{
+    //    if ((Keyboard.current.spaceKey.wasPressedThisFrame) && !hasSpawned)
+    //    {
+    //        SpawnCustomer();
+    //    }
+    //}
 
     void SpawnCustomer()
     {
