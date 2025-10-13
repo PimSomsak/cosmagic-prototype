@@ -13,15 +13,6 @@ public class CustomerSpawner : MonoBehaviour
         if (!hasSpawned)SpawnCustomer();  
     }
 
-
-    //void Update()
-    //{
-    //    if ((Keyboard.current.spaceKey.wasPressedThisFrame) && !hasSpawned)
-    //    {
-    //        SpawnCustomer();
-    //    }
-    //}
-
     void SpawnCustomer()
     {
         int r = Random.Range(0, customerPrefab.Length);

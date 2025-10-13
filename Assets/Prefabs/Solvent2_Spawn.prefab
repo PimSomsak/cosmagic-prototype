@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7804051932296441684}
   - component: {fileID: 2688958425048089134}
   m_Layer: 0
-  m_Name: JarPink
+  m_Name: Solvent2_Spawn
   m_TagString: JarPink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.58, y: 2, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2835775703051799629}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 5969103127648479468, guid: a472ad65a78db524eb243fe36f872624, type: 3}
-  m_Color: {r: 1, g: 0.3726415, b: 0.965758, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 00ed4feeb31554e429344f1391e76919, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PourByTilt
   jar: {fileID: 7804051932296441684}
-  ingredientPrefab: {fileID: 1674071970000324738, guid: 7a9150642ef5a8643a9e495672ed109a, type: 3}
+  ingredientPrefab: {fileID: 1674071970000324738, guid: 4e38e297b9c1e4442a4056f63457982d, type: 3}
   spawnPoint: {fileID: 2835775703051799629}
   spawnInterval: 0.2
   tiltThreshold: 60
@@ -184,17 +184,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4242363, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 22.560001, y: 29.767694}
+    oldSize: {x: 2.4, y: 2.7}
     newSize: {x: 22.560001, y: 29.767694}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 20.014595, y: 29.767694}
+  m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
 --- !u!1 &6664118853476135006
 GameObject:
@@ -221,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 6664118853476135006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.1, y: 10.3, z: 0}
+  m_LocalPosition: {x: 0.053, y: 1.2, z: 0}
   m_LocalScale: {x: 8.611781, y: 8.611781, z: 8.611781}
   m_ConstrainProportionsScale: 0
   m_Children: []
