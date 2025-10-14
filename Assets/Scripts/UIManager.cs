@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     [Header("Player Info")]
 
     public TextMeshProUGUI playerMoneyText;
+    public GameObject gameOverPanel;
     public Player playerMoney;
 
     public TextMeshProUGUI playerReputationText;
@@ -16,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-
+        playerMoney = FindAnyObjectByType<Player>();
     }
 
     

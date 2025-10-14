@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee2b52deb4d79a1478bd15789a1733d0
+guid: 8570db894be843149b56fc6bd8960637
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1337257218311810001
-    second: S_Sol4SoulPotion_0
+      213: -3193380246348548788
+    second: Money_Coin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Sol4SoulPotion_0
+      name: Money_Coin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 97
-        height: 153
+        x: 32
+        y: 17
+        width: 343
+        height: 339
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24923125ab117de0800000000000000
-      internalID: -1337257218311810001
+      spriteID: c4535afc595dea3d0800000000000000
+      internalID: -3193380246348548788
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Sol4SoulPotion_0: -1337257218311810001
+      Money_Coin_0: -3193380246348548788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

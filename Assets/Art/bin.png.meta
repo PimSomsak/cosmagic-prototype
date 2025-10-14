@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4827d60e9f65f4e43996860323a33c06
+guid: 26c3963bab5167d478df9d36e5aca66e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6558398193957845312
-    second: S_Sol3_0
+      213: -5868093129598958763
+    second: bin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Sol3_0
+      name: bin_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 256
         y: 0
-        width: 101
-        height: 151
+        width: 1561
+        height: 1277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c644992793ebf4a0800000000000000
-      internalID: -6558398193957845312
+      spriteID: 553085d9368509ea0800000000000000
+      internalID: -5868093129598958763
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Sol3_0: -6558398193957845312
+      bin_0: -5868093129598958763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

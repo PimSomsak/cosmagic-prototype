@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 82c5758248763b84489d293ec5ecba83
+guid: 88ae1d9abe75e23479e81a04818af8bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6898412218333551604
-    second: B_Add4FairyPixies_0
+      213: 7726541623418274570
+    second: Sign_Additive_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B_Add4FairyPixies_0
+      name: Sign_Additive_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 166
-        height: 293
+        x: 74
+        y: 213
+        width: 1876
+        height: 1472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fb5cfbfc551cbf50800000000000000
-      internalID: 6898412218333551604
+      spriteID: a03cd166ba03a3b60800000000000000
+      internalID: 7726541623418274570
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      B_Add4FairyPixies_0: 6898412218333551604
+      Sign_Additive_0: 7726541623418274570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

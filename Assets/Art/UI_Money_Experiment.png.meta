@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 06076f0e9d25fc74d8ee769e7002e6b2
+guid: 4670e6d0e6d277747af3b14fedac8fb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1495247517970058128
-    second: S_Act2GlowFish_0
+      213: -7539489299275068076
+    second: UI_Money_Experiment_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Act2GlowFish_0
+      name: UI_Money_Experiment_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 143
-        height: 135
+        x: 97
+        y: 737
+        width: 1858
+        height: 553
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0743c18fd40df3be0800000000000000
-      internalID: -1495247517970058128
+      spriteID: 45dc9d0ad6a5e5790800000000000000
+      internalID: -7539489299275068076
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Act2GlowFish_0: -1495247517970058128
+      UI_Money_Experiment_0: -7539489299275068076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

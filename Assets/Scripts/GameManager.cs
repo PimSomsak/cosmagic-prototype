@@ -3,6 +3,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+    public GameObject gameOverPanel;
+
+    public Player player;
+
     private void Awake()
     {
         
@@ -15,13 +20,25 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    
 
-    public int playerMoney = 0;
-
-    public void AddMoney(int amount)
+    private void Start()
     {
-        playerMoney += amount;
-        Debug.Log("Money: " + playerMoney);
+        gameOverPanel = FindAnyObjectByType<UIManager>().gameOverPanel;
     }
+
+    private void Update()
+    {
+        if (player.money <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    private void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+
 }

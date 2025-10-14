@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 93acbc277706e5c45a3330b811780f0c
+guid: 155308bd127c2ec44bba7ff8d5d74eb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8871749993593088334
-    second: B_Sol1Squid_0
+      213: -8170981192736535741
+    second: Sign_Ingredient_Price_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B_Sol1Squid_0
+      name: Sign_Ingredient_Price_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 145
-        height: 317
+        x: 166
+        y: 516
+        width: 1740
+        height: 944
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b65fc7a26631e480800000000000000
-      internalID: -8871749993593088334
+      spriteID: 34b8a8c95e7da9e80800000000000000
+      internalID: -8170981192736535741
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      B_Sol1Squid_0: -8871749993593088334
+      Sign_Ingredient_Price_0: -8170981192736535741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

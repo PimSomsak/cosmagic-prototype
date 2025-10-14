@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 02e6ad2b8895bab4baae25e20893f37a
+guid: 8420b6ba36b125d45813c55970920200
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5957820180186638548
-    second: B_Add1DragonTear_0
+      213: 1110070975147265828
+    second: Sign_Solvent_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B_Add1DragonTear_0
+      name: Sign_Solvent_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 171
-        height: 265
+        x: 74
+        y: 213
+        width: 1876
+        height: 1472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27525cac12915da0800000000000000
-      internalID: -5957820180186638548
+      spriteID: 42fcf15aba3c76f00800000000000000
+      internalID: 1110070975147265828
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      B_Add1DragonTear_0: -5957820180186638548
+      Sign_Solvent_0: 1110070975147265828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
