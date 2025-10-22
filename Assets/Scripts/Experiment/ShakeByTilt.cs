@@ -19,6 +19,9 @@ public class ShakeByTilt : MonoBehaviour
     private int shakeDirection = 0;
     private int shakeCount = 0;
 
+    public int maxDestroyCount = 8;
+    private int destroyCount = 0;
+
     void Start()
     {
         if (jar != null)
@@ -56,7 +59,7 @@ public class ShakeByTilt : MonoBehaviour
 
         lastX = jar.transform.position.x;
 
-        if (shakeCount >= 2 && ingredientPrefab != null && spawnPoint != null)
+        if (shakeCount >= 2 && destroyCount < maxDestroyCount)
         {
             timer += Time.deltaTime;
             if (timer >= spawnInterval)
@@ -67,8 +70,12 @@ public class ShakeByTilt : MonoBehaviour
                     Vector3 randomOffset = new Vector3(Random.Range(-0.1f, 1.1f), Random.Range(-0.1f, 1.1f), 0f);
                     Instantiate(ingredientPrefab, spawnPoint.position + randomOffset, Quaternion.identity);
                 }
-
+                destroyCount++;
                 timer = 0f;
+                if (destroyCount >= maxDestroyCount)
+                {
+                    Destroy(gameObject);
+                }
                 shakeCount = 0;
             }
         }
