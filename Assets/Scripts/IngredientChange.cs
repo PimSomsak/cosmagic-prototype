@@ -34,8 +34,7 @@ public class IngredientChange : MonoBehaviour
 
         if (hitCount >= hitsNeeded)
         {
-            hitCount = 0; // reset counter for next stage
-
+            hitCount = 0;
             if (state == IngredientState.Raw) state = IngredientState.Crushed;
 
             UpdateSprite();

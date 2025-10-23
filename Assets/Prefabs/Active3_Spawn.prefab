@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8874362083635340475}
   m_Layer: 0
   m_Name: Active3_Spawn
-  m_TagString: Yellow
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
