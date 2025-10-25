@@ -14,12 +14,16 @@ public class SpawnOnClick : MonoBehaviour
     {
         if (prefabToSpawn != null)
         {
-            Vector3 pos = spawnPoint != null ? spawnPoint.position : transform.position;
-            GameObject newObj = Instantiate(prefabToSpawn, pos, Quaternion.identity);
-            Debug.Log($"Spawned prefab with tag {newObj.tag}!");
+            if (Player.Instance.money >= price)
+            {
+                Vector3 pos = spawnPoint != null ? spawnPoint.position : transform.position;
+                GameObject newObj = Instantiate(prefabToSpawn, pos, Quaternion.identity);
+                Debug.Log($"Spawned prefab with tag {newObj.tag}!");
 
-            Player.Instance.Spend(price);
-            Debug.Log($"Spend {price}, Total Money: {Player.Instance.money}");
+                Player.Instance.Spend(price);
+                Debug.Log($"Spend {price}, Total Money: {Player.Instance.money}");
+            }
+            else { Debug.Log("Not Enough Money"); }
         }
     }
 }

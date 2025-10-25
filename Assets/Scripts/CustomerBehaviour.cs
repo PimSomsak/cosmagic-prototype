@@ -7,6 +7,8 @@ public class CustomerBehaviour : MonoBehaviour
     public Customer customerData;
     CustomerSpawner customerSpawner;
 
+
+
     private void Start()
     {
         customerSpawner = FindAnyObjectByType<CustomerSpawner>();
@@ -24,17 +26,29 @@ public class CustomerBehaviour : MonoBehaviour
 
         public bool IsSatisfied => colorOK && curseOK && magicOK && moistureOK && durabilityOK && glossOK && allergyOK;
 
-        public string GetFeedback()
+        public string GetFeedback(Customer customerData, Potion potion)
         {
             List<string> issues = new List<string>();
 
             if (!colorOK) issues.Add("Color Incorrect");
             if (!curseOK) issues.Add("CurseResist Incorrect");
             if (!magicOK) issues.Add("Magic Incorrect");
-            if (!moistureOK) issues.Add("Moisture Incorrect");
-            if (!durabilityOK) issues.Add("Durability Incorrect");
+            if (!moistureOK)
+            {
+                if (potion.moisture < customerData.moistureRange.x) issues.Add("Moisture too low");
+                else if (potion.moisture > customerData.moistureRange.y) issues.Add("Moisture too high");
+            }
+            if (!durabilityOK)
+            {
+                if (potion.durability < customerData.durabilityRange.x) issues.Add("Durability too low");
+                else if (potion.durability > customerData.durabilityRange.y) issues.Add("Durability too high");
+            }
             if (!glossOK) issues.Add("Gloss Incorrect");
-            if (!allergyOK) issues.Add("Allergy Incorrect");
+            if (!allergyOK)
+            {
+                if (potion.allergy < customerData.allergyRange.x) issues.Add("Allergy too low");
+                else if (potion.allergy > customerData.allergyRange.y) issues.Add("Allergy too high");
+            }
 
             return issues.Count == 0 ? "ALL CLEAR!" : string.Join("\n", issues);
         }
@@ -69,7 +83,7 @@ public class CustomerBehaviour : MonoBehaviour
             FeedbackBubble feedbackBubble = FindAnyObjectByType<FeedbackBubble>();
             if (feedbackBubble != null)
             {
-                feedbackBubble.ShowFeedback(feedback);
+                feedbackBubble.ShowFeedback(feedback, customerData, potion);
             }
 
             if (feedback.IsSatisfied)

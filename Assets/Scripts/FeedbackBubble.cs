@@ -8,8 +8,8 @@ public class FeedbackBubble : MonoBehaviour
     [Header("Customer Feedback")]
     public TextMeshProUGUI customerFeedbackText;
 
-    public void ShowFeedback(CustomerBehaviour.EvaluationResult result)
+    public void ShowFeedback(CustomerBehaviour.EvaluationResult result, Customer customerData, Potion potion)
     {
-        customerFeedbackText.text = result.GetFeedback();
+        customerFeedbackText.text = result.GetFeedback(customerData, potion);
     }
 }
