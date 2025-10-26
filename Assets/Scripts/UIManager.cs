@@ -5,24 +5,23 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     [Header("Player Info")]
+    //public Player player;
 
     public TextMeshProUGUI playerMoneyText;
-    public GameObject gameOverPanel;
-    public Player playerMoney;
-
     public TextMeshProUGUI playerReputationText;
-    public int playerReputationValue;
 
+    //public GameObject gameOverPanel;
     //public CustomerBehaviour feedback;
 
     void Start()
     {
-        playerMoney = FindAnyObjectByType<Player>();
+        //player = FindAnyObjectByType<Player>();
     }
 
     
     void Update()
     {
-        playerMoneyText.text = playerMoney.money.ToString();
+        playerMoneyText.text = Player.Instance.money.ToString();
+        playerReputationText.text = Player.Instance.Reputation.ToString();
     }
 }

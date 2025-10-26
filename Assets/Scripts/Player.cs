@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     public static Player Instance;
     public float money = 50f;
-    public float playerReputation = 0;
+    public float Reputation = 0;
 
     private void Awake()
     {
@@ -29,9 +29,15 @@ public class Player : MonoBehaviour
         Debug.Log($"Received {amount} coins. Total: {money}");
     }
 
+    public void SubtractMoney(float amount)
+    {
+        money -= amount;
+        Debug.Log($"Received {amount} coins. Total: {money}");
+    }
+
     public void AddReputation(float amount)
     {
-        playerReputation += amount;
-        Debug.Log($"Recieved {amount} of repuations. Total: {playerReputation}");
+        Reputation += amount;
+        Debug.Log($"Recieved {amount} of repuations. Total: {Reputation}");
     }
 }

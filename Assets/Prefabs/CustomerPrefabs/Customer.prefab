@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.01, y: -0.069}
-  m_SizeDelta: {x: 9, y: 1.061}
+  m_AnchoredPosition: {x: 5.55, y: 0.02}
+  m_SizeDelta: {x: 10, y: 1.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4659651917959438692
 CanvasRenderer:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Customer : '
+  m_text: 'Dealer : '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b90bb81ef3b184847acfac18011c5374, type: 2}
   m_sharedMaterial: {fileID: -6156716859551113967, guid: b90bb81ef3b184847acfac18011c5374, type: 2}

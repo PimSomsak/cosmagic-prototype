@@ -90,6 +90,7 @@ public class CustomerBehaviour : MonoBehaviour
             {
                 Debug.Log("Customer is satisfied with the potion!");
                 Player.Instance.AddMoney(customerData.budget);
+                Player.Instance.AddReputation(customerData.reputation);
                 StartCoroutine(DelayDestroyCustomer(3));
                 CustomerSpawner.anyCustomerSpawned = false;
             }
@@ -101,6 +102,8 @@ public class CustomerBehaviour : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+
     IEnumerator DelayDestroyCustomer(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -110,4 +113,14 @@ public class CustomerBehaviour : MonoBehaviour
             Destroy(target);
         }
     }
+
+    //public void DestroyCustomer()
+    //{ 
+    //    Player.Instance.SubtractMoney(customerData.terminationFee);
+    //    GameObject target = GameObject.FindWithTag("Customer");
+    //    if (target != null)
+    //    {
+    //        Destroy(target);
+    //    }
+    //}
 }
