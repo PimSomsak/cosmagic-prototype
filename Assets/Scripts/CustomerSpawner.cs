@@ -4,20 +4,18 @@ using UnityEngine.InputSystem;
 public class CustomerSpawner : MonoBehaviour
 {
     public GameObject[] customerPrefab;
-
-    public bool hasSpawned;
-
+    public static bool anyCustomerSpawned = false;
 
     void OnMouseDown()
     {
-        if (!hasSpawned)SpawnCustomer();  
+        if (!anyCustomerSpawned) SpawnCustomer();  
     }
 
     void SpawnCustomer()
     {
         int r = Random.Range(0, customerPrefab.Length);
         Instantiate(customerPrefab[r], new Vector3(0 , 0, 0), Quaternion.identity);
-        hasSpawned = true;
+        anyCustomerSpawned = true;
         Debug.Log($"Customer Spawn!");
     }
 }

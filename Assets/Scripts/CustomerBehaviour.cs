@@ -91,7 +91,7 @@ public class CustomerBehaviour : MonoBehaviour
                 Debug.Log("Customer is satisfied with the potion!");
                 Player.Instance.AddMoney(customerData.budget);
                 StartCoroutine(DelayDestroyCustomer(3));
-                customerSpawner.hasSpawned = false;
+                CustomerSpawner.anyCustomerSpawned = false;
             }
             else
             {
