@@ -17,6 +17,7 @@ public class Cauldron : MonoBehaviour
 
     private int hits = 0;
     public int requiredHits = 8;
+    public float stirThreshold = 0.1f;
 
     private Vector3 finalColor;
     private CurseResistace finalCurseResist; private UniqueMagic finalMagic;
@@ -131,7 +132,7 @@ public class Cauldron : MonoBehaviour
     }
     public void OnSpoonStir(float strength)
     {
-        float minStrength = 0.5f;
+        float minStrength = stirThreshold;
         if (strength >= minStrength && spoonInside)
         {
             Debug.Log($"Spoon stir detected! Strength: {strength:F2}");

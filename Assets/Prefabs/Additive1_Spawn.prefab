@@ -117,7 +117,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &5062480725316900605
 MonoBehaviour:
@@ -139,6 +139,7 @@ MonoBehaviour:
   shakeDistanceThreshold: 0.1
   minSpawnCount: 1
   maxSpawnCount: 5
+  maxDestroyCount: 8
 --- !u!114 &574649893579223489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 140
   rotationMax: 180
+  dragForce: 20
 --- !u!61 &6003820739446623950
 BoxCollider2D:
   m_ObjectHideFlags: 0

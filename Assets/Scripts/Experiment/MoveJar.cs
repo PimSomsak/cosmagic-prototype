@@ -10,6 +10,7 @@ public class MoveJar : MonoBehaviour
     [Header("Rotation Range")]
     public float rotationMin = 0f;
     public float rotationMax = 180f;
+    public float dragForce = 20f;
 
     public float CurrentRotation { get; private set; }
 
@@ -17,6 +18,8 @@ public class MoveJar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.angularDamping = 2f;
+
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     void Update()
@@ -27,7 +30,11 @@ public class MoveJar : MonoBehaviour
             Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) - dragOffset;
 
             Vector2 direction = targetPos - rb.position;
-            rb.linearVelocity = direction * 10f;
+
+            rb.linearVelocity = direction * dragForce;
+            //rb.AddForce(direction * dragForce, ForceMode2D.Force);       
+            //rb.MovePosition(rb.position + direction * dragForce * Time.deltaTime);
+
 
             float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             targetRotation = Mathf.Clamp(targetRotation, rotationMin, rotationMax);
@@ -49,7 +56,10 @@ public class MoveJar : MonoBehaviour
         dragOffset = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
 
         moving = true;
-        rb.bodyType = RigidbodyType2D.Kinematic;
+
+        //rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.gravityScale = 0f;
+
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
     }
@@ -57,7 +67,8 @@ public class MoveJar : MonoBehaviour
     private void OnMouseUp()
     {
         moving = false;
-        rb.bodyType = RigidbodyType2D.Dynamic;
+
+        //rb.bodyType = RigidbodyType2D.Dynamic; unnecessary
         rb.gravityScale = 5f;
     }
 

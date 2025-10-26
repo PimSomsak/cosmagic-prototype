@@ -12,6 +12,9 @@ public class Spoon : MonoBehaviour
         {
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             float strength = rb != null ? rb.linearVelocity.magnitude : 0f;
+
+            Debug.Log($"Spoon hit cauldron! strength = {strength}");
+
             cauldron.OnSpoonStir(strength);
         }
     }
