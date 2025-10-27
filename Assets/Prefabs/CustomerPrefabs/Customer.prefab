@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerData: {fileID: 0}
+  customerEmotion: []
 --- !u!61 &6952039489486402129
 BoxCollider2D:
   m_ObjectHideFlags: 0

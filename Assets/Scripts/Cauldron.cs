@@ -144,7 +144,7 @@ public class Cauldron : MonoBehaviour
         if (other.CompareTag("Spoon"))
         {
             spoonInside = false;
-            Debug.Log("[CauldronRecipe] Spoon left cauldron!");
+            Debug.Log("Spoon left cauldron!");
         }
     }
 }

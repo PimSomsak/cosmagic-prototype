@@ -7,7 +7,7 @@ public class CustomerBehaviour : MonoBehaviour
     public Customer customerData;
     CustomerSpawner customerSpawner;
 
-
+    public Sprite[] customerEmotion;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class CustomerBehaviour : MonoBehaviour
         public bool glossOK;
         public bool allergyOK;
 
-        public bool IsSatisfied => colorOK && curseOK && magicOK && moistureOK && durabilityOK && glossOK && allergyOK;
+        public bool IsSatisfied { get => colorOK && curseOK && magicOK && moistureOK && durabilityOK && glossOK && allergyOK; }
 
         public string GetFeedback(Customer customerData, Potion potion)
         {
@@ -72,7 +72,7 @@ public class CustomerBehaviour : MonoBehaviour
     }
 
     // Check Potion Collide
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         Potion potion = other.GetComponent<Potion>();
         if (potion != null)
@@ -89,6 +89,7 @@ public class CustomerBehaviour : MonoBehaviour
             if (feedback.IsSatisfied)
             {
                 Debug.Log("Customer is satisfied with the potion!");
+                UpdateSprite(feedback);
                 Player.Instance.AddMoney(customerData.budget);
                 Player.Instance.AddReputation(customerData.reputation);
                 StartCoroutine(DelayDestroyCustomer(3));
@@ -97,13 +98,12 @@ public class CustomerBehaviour : MonoBehaviour
             else
             {
                 Debug.Log("Customer is not satisfied...");
+                UpdateSprite(feedback);
             }
 
             Destroy(other.gameObject);
         }
     }
-
-
     IEnumerator DelayDestroyCustomer(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -113,14 +113,16 @@ public class CustomerBehaviour : MonoBehaviour
             Destroy(target);
         }
     }
-
-    //public void DestroyCustomer()
-    //{ 
-    //    Player.Instance.SubtractMoney(customerData.terminationFee);
-    //    GameObject target = GameObject.FindWithTag("Customer");
-    //    if (target != null)
-    //    {
-    //        Destroy(target);
-    //    }
-    //}
+    public void UpdateSprite(EvaluationResult result)
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (result.IsSatisfied)
+        {
+            sr.sprite = customerEmotion[0]; // Happy
+        }
+        else
+        {
+            sr.sprite = customerEmotion[1]; // Angry
+        }
+    }
 }

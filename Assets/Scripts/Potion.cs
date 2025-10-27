@@ -30,8 +30,4 @@ public class Potion : MonoBehaviour
         this.gloss = gloss;
         this.allergy = allergy;
     }
-    public float GetTotalCost()
-    {
-        return 100f;
-    }
 }

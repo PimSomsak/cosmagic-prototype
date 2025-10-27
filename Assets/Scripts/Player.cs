@@ -29,15 +29,14 @@ public class Player : MonoBehaviour
         Debug.Log($"Received {amount} coins. Total: {money}");
     }
 
-    public void SubtractMoney(float amount)
-    {
-        money -= amount;
-        Debug.Log($"Received {amount} coins. Total: {money}");
-    }
-
     public void AddReputation(float amount)
     {
         Reputation += amount;
         Debug.Log($"Recieved {amount} of repuations. Total: {Reputation}");
+    }
+    public void SubtractReputation(float amount)
+    {
+        Reputation -= amount;
+        Debug.Log($"Removed {amount} of repuations. Total: {Reputation}");
     }
 }
