@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be75153ca352fca418af2222ccbd72ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 4696862440065638988, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
+  prefabToSpawn: {fileID: 8320702379273479870, guid: 6a8f1a2220b1cfd4db4cf38e1f18ba91, type: 3}
   spawnPoint: {fileID: 1671450456}
   price: 3
 --- !u!61 &32020971
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be75153ca352fca418af2222ccbd72ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
+  prefabToSpawn: {fileID: 5620564508458438649, guid: b4abc4ebacdb6c340b7c5488172831e3, type: 3}
   spawnPoint: {fileID: 1671450456}
   price: 1
 --- !u!61 &198432666
@@ -7589,7 +7589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be75153ca352fca418af2222ccbd72ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 3957598340261457316, guid: 33d016befdd32c94cbd24fc1b626162a, type: 3}
+  prefabToSpawn: {fileID: 5543630780102862800, guid: a6b8ed108787a8347be81901e2038cef, type: 3}
   spawnPoint: {fileID: 1671450456}
   price: 2
 --- !u!61 &1777461851
@@ -8958,7 +8958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be75153ca352fca418af2222ccbd72ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 32203739752959790, guid: 9b6ad8e3b98965946b73e4ba6c35d7d5, type: 3}
+  prefabToSpawn: {fileID: 3855455031444072395, guid: 90e67a45655a6024bb9bfc65430f5bf8, type: 3}
   spawnPoint: {fileID: 1671450456}
   price: 2
 --- !u!61 &1961169408

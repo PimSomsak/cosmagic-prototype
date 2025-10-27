@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 8542253257802882057}
   - component: {fileID: 1558861295148076461}
   - component: {fileID: 8858530535509079997}
-  - component: {fileID: 1116089483380551319}
   m_Layer: 0
-  m_Name: Active1_Spawn
+  m_Name: Active1_crushed
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 0
   rotationMax: 360
+  dragForce: 20
 --- !u!114 &8858530535509079997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,19 +182,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientData: {fileID: 11400000, guid: a1faefc46abed56429ee43356ab1372e, type: 2}
---- !u!114 &1116089483380551319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5445329569196370670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc544943d56af540b8dfbbc84fad063, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  rawSprite: {fileID: 21300000, guid: b3f96a3f68c89844f81ffcd2356e9cc3, type: 3}
-  crushedSprite: {fileID: 21300000, guid: 6793f0e8f25d1b845b7850768d17ed48, type: 3}
-  hitsNeeded: 3

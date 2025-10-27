@@ -433,18 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerPrefab:
   - {fileID: 2866477072737020983, guid: dbc0969014c0e0147b4c0339b49beb2c, type: 3}
-  - {fileID: 661181870377389002, guid: ea451be7717e56f40ab566c9805d665c, type: 3}
-  - {fileID: 4465556565939516232, guid: b12d3ee12f9cf8345bba2a0a87c3b3ea, type: 3}
-  - {fileID: 2741150457151854407, guid: 5184624549114954a9cf7870cb7ca74f, type: 3}
-  - {fileID: 1546495843168852314, guid: f83771b96f11a3e4ca05c6471cd966b8, type: 3}
   - {fileID: 5601990980825641410, guid: dc85ade679f1f4348a7a539f398a924f, type: 3}
-  - {fileID: 2251383458651581851, guid: 192f6d556f07183498075ad86a6fa320, type: 3}
-  - {fileID: 8912829776824204133, guid: f812c64367ca40642a9e1735f7ce17df, type: 3}
-  - {fileID: 2640599958464626120, guid: d5d17313e470dad4fa31f128262052e4, type: 3}
-  - {fileID: 291520034638286031, guid: 03af57ccf32df404eae3442737c85cda, type: 3}
-  - {fileID: 5263487409354981348, guid: c855a917dd1b2254287a8647a81107df, type: 3}
-  - {fileID: 3473517543792920006, guid: 2460858de2a24784a92db69814de3721, type: 3}
-  - {fileID: 4614262417123438536, guid: b6ea2d5e448c651429d4e32c3afdc068, type: 3}
 --- !u!1 &485020510
 GameObject:
   m_ObjectHideFlags: 0
