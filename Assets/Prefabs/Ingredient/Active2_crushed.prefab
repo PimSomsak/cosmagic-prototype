@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: -844393073
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 2c293bb348053284abd2bb1040332795, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 770cf0e9e069314459cd761246e1b3f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.3126396
+  m_Mass: 1.0318338
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.315462
+  m_Radius: 0.5730994
 --- !u!114 &-1599960349502779837
 MonoBehaviour:
   m_ObjectHideFlags: 0
