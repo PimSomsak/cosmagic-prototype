@@ -98,11 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4598772019856735694, guid: 597b259c7589f8f4fb70bc33080a9dd3, type: 3}
       propertyPath: m_Color.g
-      value: 0.28773582
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4598772019856735694, guid: 597b259c7589f8f4fb70bc33080a9dd3, type: 3}
       propertyPath: m_Color.r
-      value: 0.4788601
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4598772019856735694, guid: 597b259c7589f8f4fb70bc33080a9dd3, type: 3}
       propertyPath: m_SortingLayer
