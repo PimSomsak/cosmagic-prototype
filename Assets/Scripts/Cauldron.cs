@@ -5,7 +5,14 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    public GameObject potionPrefab;
+    public GameObject potionDefaultPrefab;
+    public GameObject potionRedPrefab;
+    public GameObject potionBluePrefab;
+    public GameObject potionYellowPrefab;
+    public GameObject potionGreenPrefab;
+    public GameObject potionOrangePrefab;
+    public GameObject potionPurplePrefab;
+    public GameObject potionBlackPrefab;
 
     private Dictionary<IngredientType, Ingredients> selectedIngredients = new();
 
@@ -113,7 +120,27 @@ public class Cauldron : MonoBehaviour
 
     public void SpawnPotion()
     {
-        GameObject newPotion = Instantiate(potionPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+        GameObject prefabToSpawn;
+
+        if (finalColor == new Vector3(1, 0, 0))
+            prefabToSpawn = potionRedPrefab;
+        else if (finalColor == new Vector3(0, 0, 1))
+            prefabToSpawn = potionBluePrefab;
+        else if (finalColor == new Vector3(0, 1, 0))
+            prefabToSpawn = potionYellowPrefab;
+        else if (finalColor == new Vector3(1, 1, 0))
+            prefabToSpawn = potionOrangePrefab;
+        else if (finalColor == new Vector3(0, 1, 1))
+            prefabToSpawn = potionGreenPrefab;
+        else if (finalColor == new Vector3(1, 0, 1))
+            prefabToSpawn = potionPurplePrefab;
+        else if (finalColor == new Vector3(1, 1, 1))
+            prefabToSpawn = potionBlackPrefab;
+        else {prefabToSpawn = potionDefaultPrefab; }
+            
+
+
+        GameObject newPotion = Instantiate(prefabToSpawn, transform.position + Vector3.up * 0.5f, Quaternion.identity);
         Potion potionObj = newPotion.GetComponent<Potion>();
         potionObj.Initialize(finalColor, finalCurseResist, finalMagic, finalMoisture, finalDurability, finalGloss, finalAllergy);
         Debug.Log($"Mixing Complete! Potion has been created!");

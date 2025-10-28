@@ -824,7 +824,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120da3aa0129e7140880665c31319a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionPrefab: {fileID: 5321140756950284269, guid: f1134d3a557ffe44981d7f51e819483d, type: 3}
+  potionDefaultPrefab: {fileID: 5321140756950284269, guid: f1134d3a557ffe44981d7f51e819483d, type: 3}
+  potionRedPrefab: {fileID: 2502564211400322392, guid: 221b59e3870f53148b6a5c62355c5a63, type: 3}
+  potionBluePrefab: {fileID: 7385631521345375562, guid: cbd879f30a9bd14499de2b91b1123292, type: 3}
+  potionYellowPrefab: {fileID: 8855471044327958697, guid: c40198be8f3bc9a469bd9fcb8d7dfb65, type: 3}
+  potionGreenPrefab: {fileID: 740883734680600023, guid: c295f05d0f7a6644e82e55b7d61e0b20, type: 3}
+  potionOrangePrefab: {fileID: 490100568274586662, guid: 64d533cf5c9ed9141b2509b0f9cbc3ff, type: 3}
+  potionPurplePrefab: {fileID: 6144414572374335970, guid: 5e3a53bd5b4bdb248a7531668bb29ae6, type: 3}
+  potionBlackPrefab: {fileID: 4761621299448942909, guid: afaaf26f8d99dfc4dbfe840420ab17a9, type: 3}
   requiredHits: 8
   stirThreshold: 10
 --- !u!1 &140640779
