@@ -519,9 +519,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerPrefab:
-  - {fileID: 2866477072737020983, guid: dbc0969014c0e0147b4c0339b49beb2c, type: 3}
-  - {fileID: 5601990980825641410, guid: dc85ade679f1f4348a7a539f398a924f, type: 3}
-  reputationRequire: 3
+  - {fileID: 5699654182331960177, guid: 24206d6c8527768499061e35214ca073, type: 3}
+  - {fileID: 2928053939526722761, guid: c036bd4f3eec8604788d1be2b00136ac, type: 3}
+  - {fileID: 532283687948712185, guid: 23bbb56599fde924cbf47404418358bc, type: 3}
+  - {fileID: 5246117477976308483, guid: 48543078f2b93a84daba8dee072c77dd, type: 3}
+  - {fileID: 7935493716918656621, guid: bccdb24d84f20144f9e0d5bb5739891d, type: 3}
+  - {fileID: 3031602825166007378, guid: 2ec919655eed9aa4fba5d76bd3852113, type: 3}
+  - {fileID: 729462961684391868, guid: 422d3bf0c96ef324fb99a8501a04433d, type: 3}
+  - {fileID: 3695687853746857684, guid: ccb64c3266982704fba4768cd7f565f0, type: 3}
+  - {fileID: 8776877072375259498, guid: c7eb4f946c8fb2349b9028f612a5087f, type: 3}
+  - {fileID: 5666989154881719615, guid: 708ed6403f84d754c8647ace71df738b, type: 3}
+  - {fileID: 1065436830021276824, guid: 77bdb2e8aa4ce8f468b23aadd5b13812, type: 3}
+  - {fileID: 7338985922122522788, guid: 77202e4743116de4ca75fe07ab949211, type: 3}
+  - {fileID: 921995733409858969, guid: 4331af226386e6341ae78881afec87b9, type: 3}
+  - {fileID: 9149760252274839793, guid: de85baf8535dcac47aabcf125357e499, type: 3}
+  reputationRequire: 5
 --- !u!1 &485020510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1184044119864744668, guid: 9b1400bfbee169a4cbf71b9103e25c94, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053041866791915651, guid: 9b1400bfbee169a4cbf71b9103e25c94, type: 3}
       propertyPath: m_SortingOrder
@@ -2164,7 +2176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 532ab84198c84e741a73cb7aed9aeb07, type: 2}
   m_sharedMaterial: {fileID: 675577009381466390, guid: 532ab84198c84e741a73cb7aed9aeb07, type: 2}
@@ -2781,7 +2793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1877721542
 Transform:
   m_ObjectHideFlags: 0
