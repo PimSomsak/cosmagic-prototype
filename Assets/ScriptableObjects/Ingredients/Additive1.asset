@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: additive1
   type: 2
-  color: {x: 0, y: 0, z: 1}
+  color: {x: 1, y: 0, z: 0}
   curseResistance: 0
   uniqueMagic: 0
   moisture: 0

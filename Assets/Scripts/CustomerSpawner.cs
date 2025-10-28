@@ -5,10 +5,11 @@ public class CustomerSpawner : MonoBehaviour
 {
     public GameObject[] customerPrefab;
     public static bool anyCustomerSpawned = false;
+    public float reputationRequire;
 
     void OnMouseDown()
     {
-        if (!anyCustomerSpawned) SpawnCustomer();  
+        if (!anyCustomerSpawned && Player.Instance.Reputation >= reputationRequire) SpawnCustomer();  
     }
 
     void SpawnCustomer()

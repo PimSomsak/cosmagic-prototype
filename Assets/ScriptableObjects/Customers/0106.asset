@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7b7e8c94a2f4f449fab853e9444dc8, type: 3}
+  m_Name: 0106
+  m_EditorClassIdentifier: 
+  customerName: MothPriest
+  description: "Got an order for a lotion that\u2019s super glossy and extremely
+    moisturizing."
+  budget: 30
+  terminationFee: 5
+  reputation: 1
+  colorMix: {x: 5, y: 5, z: 5}
+  isCurseResist: 0
+  magic: 0
+  moistureRange: {x: 4, y: 4}
+  durabilityRange: {x: 1, y: 4}
+  isGloss: 1
+  allergyRange: {x: 1, y: 4}

@@ -434,6 +434,7 @@ MonoBehaviour:
   customerPrefab:
   - {fileID: 2866477072737020983, guid: dbc0969014c0e0147b4c0339b49beb2c, type: 3}
   - {fileID: 5601990980825641410, guid: dc85ade679f1f4348a7a539f398a924f, type: 3}
+  reputationRequire: 3
 --- !u!1 &485020510
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +544,7 @@ MonoBehaviour:
   - {fileID: 5263487409354981348, guid: c855a917dd1b2254287a8647a81107df, type: 3}
   - {fileID: 3473517543792920006, guid: 2460858de2a24784a92db69814de3721, type: 3}
   - {fileID: 4614262417123438536, guid: b6ea2d5e448c651429d4e32c3afdc068, type: 3}
+  reputationRequire: 0
 --- !u!70 &686225945
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1874,6 +1876,7 @@ MonoBehaviour:
   - {fileID: 5263487409354981348, guid: c855a917dd1b2254287a8647a81107df, type: 3}
   - {fileID: 3473517543792920006, guid: 2460858de2a24784a92db69814de3721, type: 3}
   - {fileID: 4614262417123438536, guid: b6ea2d5e448c651429d4e32c3afdc068, type: 3}
+  reputationRequire: 15
 --- !u!1 &1854363383
 GameObject:
   m_ObjectHideFlags: 0

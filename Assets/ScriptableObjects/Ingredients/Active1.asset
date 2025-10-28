@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: active1
   type: 0
-  color: {x: 1, y: 0, z: 0}
+  color: {x: 0, y: 1, z: 0}
   curseResistance: 1
   uniqueMagic: 2
   moisture: 0

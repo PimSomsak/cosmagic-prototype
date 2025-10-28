@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnOnClick : MonoBehaviour
 {
@@ -8,8 +10,16 @@ public class SpawnOnClick : MonoBehaviour
     [Header("spawnPoint")]
     public Transform spawnPoint;
 
+    public TextMeshProUGUI priceText;
     public float price;
 
+    void Start()
+    {
+        if (priceText != null)
+        {
+            priceText.text = price.ToString();
+        }
+    }
     void OnMouseDown()
     {
         if (prefabToSpawn != null)
