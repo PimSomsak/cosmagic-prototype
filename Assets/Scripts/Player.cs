@@ -39,4 +39,16 @@ public class Player : MonoBehaviour
         Reputation -= amount;
         Debug.Log($"Removed {amount} of repuations. Total: {Reputation}");
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            AddMoney(100f);
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            AddReputation(10f);
+        }
+    }
 }

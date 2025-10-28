@@ -3,9 +3,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    //private Customer customerData;
-
-    //public GameObject gameOverPanel;
 
     public Player player;
 
@@ -21,35 +18,6 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
-    //private void Start()
-    //{
-    //    //gameOverPanel = FindAnyObjectByType<UIManager>().gameOverPanel;
-    //}
-
-    //private void Update()
-    //{
-    //    if (player.money <= 0)
-    //    {
-    //        GameOver();
-    //    }
-    //}
-
-    //private void GameOver()
-    //{
-    //    gameOverPanel.SetActive(true);
-    //    Time.timeScale = 0;
-    //}
-
-    //public void DestroyCustomer()
-    //{
-    //    //customerData = FindAnyObjectByType<Customer>();
-    //    Player.Instance.SubtractMoney(customerData.terminationFee);
-    //    foreach (GameObject customer in GameObject.FindGameObjectsWithTag("Customer"))
-    //    {
-    //        Destroy(customer);
-    //    }
-    //}
 
 
 }
