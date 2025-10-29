@@ -42,13 +42,14 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.P))
         {
             AddMoney(100f);
         }
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.O))
         {
             AddReputation(10f);
         }
+        
     }
 }
