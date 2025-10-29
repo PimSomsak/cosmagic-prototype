@@ -49,8 +49,9 @@ public class CustomerBehaviour : MonoBehaviour
                 if (potion.allergy < customerData.allergyRange.x) issues.Add("Allergy too low");
                 else if (potion.allergy > customerData.allergyRange.y) issues.Add("Allergy too high");
             }
-
+            
             return issues.Count == 0 ? "ALL CLEAR!" : string.Join("\n", issues);
+
         }
     }
 
@@ -89,6 +90,7 @@ public class CustomerBehaviour : MonoBehaviour
             if (feedback.IsSatisfied)
             {
                 Debug.Log("Customer is satisfied with the potion!");
+                SFXManager.Instance.PlaySFX("CustomerSuccess");
                 UpdateSprite(feedback);
                 Player.Instance.AddMoney(customerData.budget);
                 Player.Instance.AddReputation(customerData.reputation);
@@ -98,6 +100,7 @@ public class CustomerBehaviour : MonoBehaviour
             else
             {
                 Debug.Log("Customer is not satisfied...");
+                SFXManager.Instance.PlaySFX("CustomerIncorrect");
                 UpdateSprite(feedback);
             }
 

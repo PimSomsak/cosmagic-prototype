@@ -179,6 +179,7 @@ public class Cauldron : MonoBehaviour
         GameObject newPotion = Instantiate(prefabToSpawn, transform.position + Vector3.up * 0.5f, Quaternion.identity);
         Potion potionObj = newPotion.GetComponent<Potion>();
         potionObj.Initialize(finalColor, finalCurseResist, finalMagic, finalMoisture, finalDurability, finalGloss, finalAllergy);
+        SFXManager.Instance.PlaySFX("CauldronBubbling");
         Debug.Log($"Mixing Complete! Potion has been created!");
     }
     public void Stir()
@@ -186,6 +187,7 @@ public class Cauldron : MonoBehaviour
         if (selectedIngredients.Count < 3) return;
         hits++;
         Debug.Log("Hit");
+        SFXManager.Instance.PlaySFX("MixingVessel");
 
         if (hits == requiredHits)
         {

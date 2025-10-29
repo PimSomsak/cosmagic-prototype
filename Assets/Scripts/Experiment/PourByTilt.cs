@@ -27,6 +27,7 @@ public class PourByTilt : MonoBehaviour
             if (timer >= spawnInterval)
             {
                 Instantiate(ingredientPrefab, spawnPoint.position, Quaternion.identity);
+                SFXManager.Instance.PlaySFX("PouringSolvent");
                 pouredCount++;
                 timer = 0f;
 

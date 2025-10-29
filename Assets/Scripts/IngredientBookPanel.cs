@@ -38,6 +38,7 @@ public class IngredientGuideBook : MonoBehaviour
         {
             currentPage++;
             ShowPage(currentPage);
+            SFXManager.Instance.PlaySFX("FlippingBook");
         }
     }
 
@@ -47,6 +48,7 @@ public class IngredientGuideBook : MonoBehaviour
         {
             currentPage--;
             ShowPage(currentPage);
+            SFXManager.Instance.PlaySFX("FlippingBook");
         }
     }
 

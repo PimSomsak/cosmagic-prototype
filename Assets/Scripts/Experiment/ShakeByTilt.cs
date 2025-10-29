@@ -69,6 +69,7 @@ public class ShakeByTilt : MonoBehaviour
                 {
                     Vector3 randomOffset = new Vector3(Random.Range(-0.1f, 1.1f), Random.Range(-0.1f, 1.1f), 0f);
                     Instantiate(ingredientPrefab, spawnPoint.position + randomOffset, Quaternion.identity);
+                    SFXManager.Instance.PlaySFX("ShakingAdditive");
                 }
                 destroyCount++;
                 timer = 0f;

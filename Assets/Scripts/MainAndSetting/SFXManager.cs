@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SFXManager : MonoBehaviour
 {
@@ -14,7 +15,12 @@ public class SFXManager : MonoBehaviour
     public AudioClip pouringSolvent;
     public AudioClip shakingAdditive;
     public AudioClip mixingVessel;
+    public AudioClip cauldronBubbling;
     public AudioClip rubbishBin;
+    public AudioClip knockTheDoor;
+    public AudioClip customerSuccess;
+    public AudioClip customerIncorrect;
+    public AudioClip flippingBook;
 
     void Awake()
     {
@@ -56,8 +62,23 @@ public class SFXManager : MonoBehaviour
             case "MixingVessel":
                 PlaySFX(mixingVessel);
                 break;
+            case "CauldronBubbling":
+                PlaySFX(cauldronBubbling);
+                break;
+            case "FlippingBook":
+                PlaySFX(flippingBook);
+                break;
             case "RubbishBin":
                 PlaySFX(rubbishBin);
+                break;
+            case "KnockTheDoor":
+                PlaySFX(knockTheDoor);
+                break;
+            case "CustomerSuccess":
+                PlaySFX(customerSuccess);
+                break;
+            case "CustomerIncorrect":
+                PlaySFX(customerIncorrect);
                 break;
             default:
                 Debug.LogWarning("SFX not found: " + clipName);

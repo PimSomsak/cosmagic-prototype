@@ -10,6 +10,7 @@ public class IngredientBook : MonoBehaviour
         if (IngredientGuideBookPanel != null)
         {
             IngredientGuideBookPanel.SetActive(!IngredientGuideBookPanel.activeSelf);
+            SFXManager.Instance.PlaySFX("GrabObject");
         }
     }
 }

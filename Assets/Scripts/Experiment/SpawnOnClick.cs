@@ -35,5 +35,7 @@ public class SpawnOnClick : MonoBehaviour
             }
             else { Debug.Log("Not Enough Money"); }
         }
+
+        SFXManager.Instance.PlaySFX("BuyIngredient");
     }
 }

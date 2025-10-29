@@ -251,7 +251,12 @@ MonoBehaviour:
   pouringSolvent: {fileID: 8300000, guid: 0f17140e725754d4fbf9461868a1c314, type: 3}
   shakingAdditive: {fileID: 8300000, guid: f6e84c09462b811408b5cf4d11a2b8e2, type: 3}
   mixingVessel: {fileID: 8300000, guid: 463912753db3a9b4890c2ff3dab01c1e, type: 3}
+  cauldronBubbling: {fileID: 8300000, guid: 4b9f2249a8eae424995cfa3b982ecd4c, type: 3}
   rubbishBin: {fileID: 8300000, guid: b3e88e297117664468ba143188138132, type: 3}
+  knockTheDoor: {fileID: 8300000, guid: b27d2aa6a176306428f184e90e64175e, type: 3}
+  customerSuccess: {fileID: 8300000, guid: 96a52a935112cea4cb7adbc0ce8da099, type: 3}
+  customerIncorrect: {fileID: 8300000, guid: bc7aec2cb7e793f4b924ebc40b225a3c, type: 3}
+  flippingBook: {fileID: 8300000, guid: 6491b0d8571063346b8e88f762adbd60, type: 3}
 --- !u!1 &6763007479102858979
 GameObject:
   m_ObjectHideFlags: 0

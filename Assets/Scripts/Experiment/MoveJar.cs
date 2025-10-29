@@ -62,6 +62,8 @@ public class MoveJar : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+
+        SFXManager.Instance.PlaySFX("GrabObject");
     }
 
     private void OnMouseUp()

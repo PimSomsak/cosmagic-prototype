@@ -6,5 +6,6 @@ public class DestoryTemp : MonoBehaviour
     {
         if (collision.tag != "Spoon" || collision.tag != "Pestle")
         { Destroy(collision.gameObject); }
+        SFXManager.Instance.PlaySFX("RubbishBin");
     }
 }

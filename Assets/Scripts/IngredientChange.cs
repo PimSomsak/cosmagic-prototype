@@ -15,6 +15,7 @@ public class IngredientChange : MonoBehaviour
             ApplyHit();
             Debug.Log("Ingredient hit by pestle!");
         }
+        
     }
 
     public void ApplyHit()
@@ -33,6 +34,7 @@ public class IngredientChange : MonoBehaviour
         {
             Debug.Log($"Ingredient hit {hitCount}/{hitsNeeded}");
         }
+        SFXManager.Instance.PlaySFX("GrindingActive");
     }
 
     private void UpdateSprite()

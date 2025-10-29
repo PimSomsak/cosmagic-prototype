@@ -16,6 +16,7 @@ public class CustomerSpawner : MonoBehaviour
     {
         int r = Random.Range(0, customerPrefab.Length);
         Instantiate(customerPrefab[r], new Vector3(0 , 0, 0), Quaternion.identity);
+        SFXManager.Instance.PlaySFX("KnockTheDoor");
         anyCustomerSpawned = true;
         Debug.Log($"Customer Spawn!");
     }
