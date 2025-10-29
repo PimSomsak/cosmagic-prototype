@@ -5,6 +5,16 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
+    [System.Serializable]
+    public class ShowIngredient
+    {
+        public GameObject ingredientAdd;
+        public GameObject spriteToShow;
+        public Transform spawnPoint;
+        [HideInInspector] public GameObject currentSprite;
+    }
+    public ShowIngredient[] showIngredients;
+
     public GameObject potionDefaultPrefab;
     public GameObject potionRedPrefab;
     public GameObject potionBluePrefab;
@@ -54,6 +64,32 @@ public class Cauldron : MonoBehaviour
             Debug.Log($"{data.ingredientData.itemName} added.");
             Destroy(other.gameObject);
             AddStats();
+
+            foreach (var item in showIngredients)
+            {
+                if (item.ingredientAdd == null) continue;
+
+                if (other.gameObject.name.Contains(item.ingredientAdd.name))
+                {
+                    foreach (var newItem in showIngredients)
+                    {
+                        if (newItem.spawnPoint == item.spawnPoint && newItem.currentSprite != null)
+                        {
+                            Destroy(newItem.currentSprite);
+                            newItem.currentSprite = null;
+                        }
+                    }
+
+                    if (item.spriteToShow != null && item.spawnPoint != null)
+                    {
+                        GameObject spawned = Instantiate(item.spriteToShow, item.spawnPoint.position, Quaternion.identity);
+                        spawned.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                        item.currentSprite = spawned;
+
+                        Debug.Log($"Spawned {other.gameObject.name}");
+                    }
+                }
+            }
         }
         /*else if (data == null)
         {
@@ -155,6 +191,7 @@ public class Cauldron : MonoBehaviour
         {
             SpawnPotion();
             ResetCauldron();
+            DestroyAllCurrentSprites();
         }
     }
     public void OnSpoonStir(float strength)
@@ -171,7 +208,18 @@ public class Cauldron : MonoBehaviour
         if (other.CompareTag("Spoon"))
         {
             spoonInside = false;
-            Debug.Log("Spoon left cauldron!");
+        }
+    }
+
+    public void DestroyAllCurrentSprites()
+    {
+        foreach (var item in showIngredients)
+        {
+            if (item.currentSprite != null)
+            {
+                Destroy(item.currentSprite);
+                item.currentSprite = null;
+            }
         }
     }
 }
