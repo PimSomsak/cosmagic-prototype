@@ -27,7 +27,7 @@ public class SpawnOnClick : MonoBehaviour
             if (Player.Instance.money >= price)
             {
                 Vector3 pos = spawnPoint != null ? spawnPoint.position : transform.position;
-                GameObject newObj = Instantiate(prefabToSpawn, pos, Quaternion.identity);
+                GameObject newObj = Instantiate(prefabToSpawn, pos, Quaternion.identity, spawnPoint);
                 Debug.Log($"Spawned prefab with tag {newObj.tag}!");
 
                 Player.Instance.Spend(price);
