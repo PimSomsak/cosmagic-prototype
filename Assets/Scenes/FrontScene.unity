@@ -881,7 +881,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerPrefab:
   - {fileID: 2866477072737020983, guid: dbc0969014c0e0147b4c0339b49beb2c, type: 3}
-  - {fileID: 661181870377389002, guid: ea451be7717e56f40ab566c9805d665c, type: 3}
   - {fileID: 4465556565939516232, guid: b12d3ee12f9cf8345bba2a0a87c3b3ea, type: 3}
   - {fileID: 2741150457151854407, guid: 5184624549114954a9cf7870cb7ca74f, type: 3}
   - {fileID: 1546495843168852314, guid: f83771b96f11a3e4ca05c6471cd966b8, type: 3}
