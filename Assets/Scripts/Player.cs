@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.P))
         {
-            AddMoney(100f);
+            AddMoney(1000f);
         }
         if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.O))
         {
