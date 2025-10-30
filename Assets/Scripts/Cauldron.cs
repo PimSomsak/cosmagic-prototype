@@ -82,8 +82,7 @@ public class Cauldron : MonoBehaviour
 
                     if (item.spriteToShow != null && item.spawnPoint != null)
                     {
-                        GameObject spawned = Instantiate(item.spriteToShow, item.spawnPoint.position, Quaternion.identity);
-                        spawned.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                        GameObject spawned = Instantiate(item.spriteToShow, item.spawnPoint.position, Quaternion.identity, item.spawnPoint);
                         item.currentSprite = spawned;
 
                         Debug.Log($"Spawned {other.gameObject.name}");
