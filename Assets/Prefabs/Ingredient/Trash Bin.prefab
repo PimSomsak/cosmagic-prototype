@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5208560413041165461}
   - component: {fileID: 5680573796912462526}
-  - component: {fileID: 8732411794906299998}
+  - component: {fileID: 7142013725169748459}
   - component: {fileID: 4502532802932684481}
   m_Layer: 0
   m_Name: Trash Bin
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8732411794906299998
+--- !u!114 &7142013725169748459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6687013107603707284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bbf2b7010a04e74e94fd84f7c72cc80, type: 3}
+  m_Script: {fileID: 11500000, guid: f3b99211d44054146a401a3d204dde30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!70 &4502532802932684481
