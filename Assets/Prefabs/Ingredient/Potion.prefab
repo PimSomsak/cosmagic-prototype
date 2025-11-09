@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7600897025826504992}
   - component: {fileID: -8400144804498074789}
   - component: {fileID: 2692108333180188447}
-  - component: {fileID: 3828953001250749672}
+  - component: {fileID: 3739028760676682094}
   m_Layer: 0
   m_Name: Potion
   m_TagString: Untagged
@@ -154,8 +154,8 @@ MonoBehaviour:
   durability: 0
   gloss: 0
   allergy: 0
---- !u!61 &3828953001250749672
-BoxCollider2D:
+--- !u!58 &3739028760676682094
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -188,15 +188,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.05021882, y: -0.104121596}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.5859861, y: 0.9304636}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.008064449, y: -0.11290252}
+  m_Radius: 0.86539906
