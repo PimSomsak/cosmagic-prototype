@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8400144804498074789, guid: f1134d3a557ffe44981d7f51e819483d, type: 3}
+      propertyPath: rotationMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8400144804498074789, guid: f1134d3a557ffe44981d7f51e819483d, type: 3}
+      propertyPath: rotationMin
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 5321140756950284269, guid: f1134d3a557ffe44981d7f51e819483d, type: 3}
       propertyPath: m_Name
       value: Potion Black

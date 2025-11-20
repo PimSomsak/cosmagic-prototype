@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6331330061511206744}
   - component: {fileID: 1659146735371759242}
   - component: {fileID: 7804051932296441684}
+  - component: {fileID: 4376743167046177624}
   - component: {fileID: 2688958425048089134}
   m_Layer: 0
   m_Name: Solvent2_Spawn
@@ -150,8 +151,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveItem1
   rotationMin: -5
-  rotationMax: 90
+  rotationMax: 120
   dragForce: 20
+  dragRotationMin: -10
+  dragRotationMax: 10
+--- !u!114 &4376743167046177624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420590779715576181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf94a3b4668d29438240a7b1ca49a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSprite: {fileID: 21300000, guid: bc238b6ed23f83c419622b26f8d2221e, type: 3}
+  rightClickSprite: {fileID: 21300000, guid: 7cb979c3dd430314aa8f9b8cd13afa92, type: 3}
 --- !u!61 &2688958425048089134
 BoxCollider2D:
   m_ObjectHideFlags: 0

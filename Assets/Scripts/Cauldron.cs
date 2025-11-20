@@ -24,6 +24,12 @@ public class Cauldron : MonoBehaviour
     public GameObject potionPurplePrefab;
     public GameObject potionBlackPrefab;
 
+    [Header("UI")]
+    public Slider stirProgressSlider;
+
+    private float currentFill = 0f;
+    public float fillSpeed = 3f;
+
     private Dictionary<IngredientType, Ingredients> selectedIngredients = new();
 
     // ช้อนอยู่ในหม้อมั้ย
@@ -46,6 +52,21 @@ public class Cauldron : MonoBehaviour
     private int additiveRequire = 15;
     private int additiveCount = 0;*/
 
+    void Start()
+    {
+        if (stirProgressSlider != null)
+        {
+            stirProgressSlider.value = 0;
+            stirProgressSlider.gameObject.SetActive(false);
+        }
+    }
+    void Update()
+    {
+        if (stirProgressSlider != null && stirProgressSlider.gameObject.activeSelf)
+        {
+            stirProgressSlider.value = Mathf.MoveTowards(stirProgressSlider.value, currentFill, fillSpeed * Time.deltaTime);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -151,6 +172,9 @@ public class Cauldron : MonoBehaviour
 
         hits = 0;
         selectedIngredients.Clear();
+
+        if (stirProgressSlider != null)
+            stirProgressSlider.gameObject.SetActive(false);
     }
 
     public void SpawnPotion()
@@ -188,11 +212,23 @@ public class Cauldron : MonoBehaviour
         Debug.Log("Hit");
         SFXManager.Instance.PlaySFX("MixingVessel");
 
+        if (stirProgressSlider != null && !stirProgressSlider.gameObject.activeSelf)
+        {
+            stirProgressSlider.gameObject.SetActive(true);
+            stirProgressSlider.maxValue = requiredHits - 1;
+            stirProgressSlider.value = 0f;
+            currentFill = 0f;
+        }
+
+        currentFill = hits;
+
         if (hits == requiredHits)
         {
             SpawnPotion();
             ResetCauldron();
             DestroyAllCurrentSprites();
+
+            currentFill = 0f;
         }
     }
     public void OnSpoonStir(float strength)

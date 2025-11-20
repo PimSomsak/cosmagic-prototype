@@ -166,9 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d99b54dd19620746b028052c1dcf6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
-  rotationMin: 0
-  rotationMax: 360
+  rotationMin: -10
+  rotationMax: 10
   dragForce: 20
+  dragRotationMin: -10
+  dragRotationMax: 10
 --- !u!114 &3106412794599684158
 MonoBehaviour:
   m_ObjectHideFlags: 0

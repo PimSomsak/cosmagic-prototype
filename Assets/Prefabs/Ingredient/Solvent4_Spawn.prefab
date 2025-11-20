@@ -181,8 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveItem1
   rotationMin: -5
-  rotationMax: 90
+  rotationMax: 120
   dragForce: 20
+  dragRotationMin: -10
+  dragRotationMax: 10
 --- !u!61 &5658957417449583265
 BoxCollider2D:
   m_ObjectHideFlags: 0
