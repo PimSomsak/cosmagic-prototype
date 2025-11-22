@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8304961381805736075}
   - component: {fileID: 4724245832669548382}
+  - component: {fileID: -2090603298334872644}
   - component: {fileID: 426439969109235402}
   - component: {fileID: 4818286805161984232}
   - component: {fileID: 8840615395169979334}
   - component: {fileID: 7923682105651472690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Additive4_Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.77, y: -2.87, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9048016629087248}
@@ -92,6 +93,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2090603298334872644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263784126301796611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e968208b3df7e45930375c87a21ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &426439969109235402
 Rigidbody2D:
   serializedVersion: 5
@@ -155,6 +168,8 @@ MonoBehaviour:
   rotationMin: 140
   rotationMax: 180
   dragForce: 20
+  dragRotationMin: -10
+  dragRotationMax: 10
 --- !u!61 &7923682105651472690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9048016629087248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

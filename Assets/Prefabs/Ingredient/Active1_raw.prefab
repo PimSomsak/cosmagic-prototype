@@ -18,12 +18,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504060503541644022, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
       propertyPath: m_Mass
-      value: 0.88716227
+      value: 0.1797405
       objectReference: {fileID: 0}
     - target: {fileID: 3750376885720299933, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 16dea2c3f4bfe1b49992faa05f9cfee7, type: 3}
+    - target: {fileID: 4278988028858895703, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278988028858895703, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4278988028858895703, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -78,12 +86,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8858530535509079997, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
+    - {fileID: 1485319174948006480, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4663887173038944888}
+    - targetCorrespondingSourceObject: {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6066827571331225352}
   m_SourcePrefab: {fileID: 100100000, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
 --- !u!1 &5620564508458438649 stripped
 GameObject:
@@ -104,3 +116,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crushedSprite: {fileID: 5445329569196370670, guid: f73f77a1dbc6fc84493b865894052b50, type: 3}
   hitsNeeded: 3
+--- !u!58 &6066827571331225352
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620564508458438649}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.1, y: -0.1}
+  m_Radius: 0.39865458

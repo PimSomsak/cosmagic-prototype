@@ -10,12 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4313097824217965880}
   - component: {fileID: 4587744832312311142}
+  - component: {fileID: -7401526009045182336}
   - component: {fileID: 6394687576840678450}
   - component: {fileID: 1404846882821913359}
   - component: {fileID: 6704969258715980075}
   - component: {fileID: 4275867259136027911}
   - component: {fileID: 4907834293004912774}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Solvent3_Spawn
   m_TagString: JarBlue
   m_Icon: {fileID: 0}
@@ -32,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.8, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.08}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.08}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2577225261848495550}
@@ -93,6 +94,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7401526009045182336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902887326173704114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e968208b3df7e45930375c87a21ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &6394687576840678450
 Rigidbody2D:
   serializedVersion: 5
@@ -203,7 +216,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.043214083, y: -0.0729239}
+  m_Offset: {x: 0.043213964, y: -0.22539781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +226,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1866965, y: 1.2305832}
+  m_Size: {x: 1.1567013, y: 0.89564013}
   m_EdgeRadius: 0
 --- !u!1 &6345165148121418566
 GameObject:
@@ -224,7 +237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2577225261848495550}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 6345165148121418566}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.54, z: 0}
+  m_LocalPosition: {x: 0.03, y: 0.42, z: 0}
   m_LocalScale: {x: 8.611781, y: 8.611781, z: 8.611781}
   m_ConstrainProportionsScale: 0
   m_Children: []

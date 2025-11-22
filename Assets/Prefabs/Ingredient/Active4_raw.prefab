@@ -10,11 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 77196174507337603, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
       propertyPath: m_Mass
-      value: 1.6464425
+      value: 0.57995045
       objectReference: {fileID: 0}
     - target: {fileID: 1093249757675965269, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
       propertyPath: m_Radius
       value: 0.723933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941028060559588718, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941028060559588718, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 3941028060559588718, guid: 2dbf7fc8cdac06d418e91681eb21374b, type: 3}
       propertyPath: m_LocalPosition.x
