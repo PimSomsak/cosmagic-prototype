@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5284116414597098293}
   m_Layer: 3
   m_Name: Active4_crushed
-  m_TagString: Purple
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

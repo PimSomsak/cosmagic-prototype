@@ -35,8 +35,8 @@ TagManager:
   - UI
   - Dragging
   - Shelf
-  - Border
-  - 
+  - Crushable
+  - Pestel
   - 
   - 
   - 
@@ -62,6 +62,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ingredient
+    uniqueID: 4104692005
+    locked: 0
+  - name: Crushable
+    uniqueID: 878223969
+    locked: 0
+  - name: Dragging
+    uniqueID: 585457493
+    locked: 0
+  - name: Pestel
+    uniqueID: 2777459877
     locked: 0
   m_RenderingLayers:
   - Default
