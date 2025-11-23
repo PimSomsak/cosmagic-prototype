@@ -41,16 +41,12 @@ public class Cauldron : MonoBehaviour
     private int hits = 0;
     public int requiredHits = 8;
     public float stirThreshold = 0.1f;
+    [field: SerializeField] private Transform potionSpawn;
 
     private Vector3 finalColor;
     private CurseResistace finalCurseResist; private UniqueMagic finalMagic;
     private int finalMoisture; private int finalDurability;
     private Gloss finalGloss; private int finalAllergy;
-
-    /*private int solventRequire = 15;
-    private int solventCount = 0;
-    private int additiveRequire = 15;
-    private int additiveCount = 0;*/
 
     void Start()
     {
@@ -199,7 +195,7 @@ public class Cauldron : MonoBehaviour
             
 
 
-        GameObject newPotion = Instantiate(prefabToSpawn, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+        GameObject newPotion = Instantiate(prefabToSpawn, potionSpawn.position, Quaternion.identity);
         Potion potionObj = newPotion.GetComponent<Potion>();
         potionObj.Initialize(finalColor, finalCurseResist, finalMagic, finalMoisture, finalDurability, finalGloss, finalAllergy);
         SFXManager.Instance.PlaySFX("CauldronBubbling");
