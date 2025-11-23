@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IngredientGuideBook : MonoBehaviour
+public class TutotrialBookPanel : MonoBehaviour
 {
     [Header("Pages in the book")]
     public GameObject[] pages;
