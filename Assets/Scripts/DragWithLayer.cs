@@ -24,6 +24,17 @@ public class DragWithLayer : MonoBehaviour
                 gameObject.layer = originalLayer;
             }
         }
+        else if (originalLayer == LayerMask.NameToLayer("Ingredient"))
+        {
+            if (isInMortar)
+            {
+                gameObject.layer = LayerMask.NameToLayer("Crushable");
+            }
+            else
+            {
+                gameObject.layer = originalLayer;
+            }
+        }
         else
         {
             gameObject.layer = originalLayer;
