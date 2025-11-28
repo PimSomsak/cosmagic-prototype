@@ -26,6 +26,7 @@ TagManager:
   - Salt
   - Ingredient
   - Customer
+  - MortarZone
   layers:
   - Default
   - TransparentFX

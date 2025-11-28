@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TutotrialBookPanel : MonoBehaviour
+public class TutorialBookPanel : MonoBehaviour
 {
     [Header("Pages in the book")]
     public GameObject[] pages;
@@ -10,19 +10,24 @@ public class TutotrialBookPanel : MonoBehaviour
     public Button buttonPrev;
     public Button buttonNext;
 
+    [Header("Exit Button")]
+    public Button buttonExit; 
+
     private int currentPage = 0;
 
     void Start()
     {
         ShowPage(currentPage);
- 
+
         buttonPrev.onClick.AddListener(PrevPage);
         buttonNext.onClick.AddListener(NextPage);
+
+        if (buttonExit != null)
+            buttonExit.onClick.AddListener(ClosePanel); 
     }
 
     void ShowPage(int index)
     {
-        
         for (int i = 0; i < pages.Length; i++)
         {
             pages[i].SetActive(i == index);
@@ -52,4 +57,9 @@ public class TutotrialBookPanel : MonoBehaviour
         }
     }
 
+    void ClosePanel()
+    {
+        gameObject.SetActive(false);
+        SFXManager.Instance.PlaySFX("GrabObject");
+    }
 }

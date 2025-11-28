@@ -8,7 +8,7 @@ public class CustomerBehaviour : MonoBehaviour
     CustomerSpawner customerSpawner;
 
     public Sprite[] customerEmotion;
-
+    public GameObject heart;
     private void Start()
     {
         customerSpawner = FindAnyObjectByType<CustomerSpawner>();
@@ -92,6 +92,7 @@ public class CustomerBehaviour : MonoBehaviour
                 Debug.Log("Customer is satisfied with the potion!");
                 SFXManager.Instance.PlaySFX("CustomerSuccess");
                 UpdateSprite(feedback);
+                heart.SetActive(true);
                 Player.Instance.AddMoney(customerData.budget);
                 Player.Instance.AddReputation(customerData.reputation);
                 StartCoroutine(DelayDestroyCustomer(3));
