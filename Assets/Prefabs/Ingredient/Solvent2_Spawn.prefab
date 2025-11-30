@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d99b54dd19620746b028052c1dcf6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveItem1
-  rotationMin: -5
-  rotationMax: 120
+  rotationMin: 110
+  rotationMax: 130
   dragForce: 20
   dragRotationMin: -10
   dragRotationMax: 10
@@ -180,8 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf94a3b4668d29438240a7b1ca49a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jar: {fileID: 7804051932296441684}
   normalSprite: {fileID: 21300000, guid: bc238b6ed23f83c419622b26f8d2221e, type: 3}
-  rightClickSprite: {fileID: 21300000, guid: 7cb979c3dd430314aa8f9b8cd13afa92, type: 3}
+  rotatedSprite: {fileID: 21300000, guid: 7cb979c3dd430314aa8f9b8cd13afa92, type: 3}
+  tiltThreshold: 60
 --- !u!61 &2688958425048089134
 BoxCollider2D:
   m_ObjectHideFlags: 0

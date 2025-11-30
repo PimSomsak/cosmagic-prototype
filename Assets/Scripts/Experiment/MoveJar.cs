@@ -5,6 +5,7 @@ public class MoveJar : MonoBehaviour
 {
     private bool moving = false;
     private bool rotating = false;
+
     private Vector2 dragOffset;
     private Rigidbody2D rb;
 
@@ -23,54 +24,70 @@ public class MoveJar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.angularDamping = 2f;
-
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     void Update()
     {
+        HandleStopRotationWhenLeftReleased();
+        HandleRightMouseReleased();
+
         if (moving)
-        {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) - dragOffset;
-
-            Vector2 direction = targetPos - rb.position;
-
-            rb.linearVelocity = direction * dragForce;
-            CurrentRotation = rb.rotation;
-            //rb.AddForce(direction * dragForce, ForceMode2D.Force);       
-            //rb.MovePosition(rb.position + direction * dragForce * Time.deltaTime);
-
-            float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            targetRotation = Mathf.Clamp(targetRotation, dragRotationMin, dragRotationMax);
-
-            float newAngle = Mathf.LerpAngle(rb.rotation, targetRotation, Time.deltaTime * 10f);
-            rb.MoveRotation(newAngle);
-
-            CurrentRotation = newAngle;
-
-        }
+            HandleMoveAndSmallRotation();
 
         if (rotating)
+            HandleRotation();
+    }
+
+    void HandleStopRotationWhenLeftReleased()
+    {
+        if (!Input.GetMouseButton(0))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) - dragOffset;
-            Vector2 direction = targetPos - rb.position;
-
-            float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            targetRotation = Mathf.Clamp(targetRotation, rotationMin, rotationMax);
-
-            float newAngle = Mathf.LerpAngle(rb.rotation, targetRotation, Time.deltaTime * 10f);
-            rb.MoveRotation(newAngle);
-
-            CurrentRotation = newAngle;
+            rotating = false;
         }
+    }
 
+    void HandleRightMouseReleased()
+    {
         if (Input.GetMouseButtonUp(1))
         {
             rotating = false;
             rb.gravityScale = 5f;
         }
+    }
+
+    void HandleMoveAndSmallRotation()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) - dragOffset;
+
+        Vector2 direction = targetPos - rb.position;
+
+        rb.linearVelocity = direction * dragForce;
+        CurrentRotation = rb.rotation;
+
+        float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        targetRotation = Mathf.Clamp(targetRotation, dragRotationMin, dragRotationMax);
+
+        float newAngle = Mathf.LerpAngle(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f);
+        rb.MoveRotation(newAngle);
+
+        CurrentRotation = newAngle;
+    }
+
+    void HandleRotation()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 targetPos = new Vector2(mousePos.x, mousePos.y) - dragOffset;
+        Vector2 direction = targetPos - rb.position;
+
+        float targetRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        targetRotation = Mathf.Clamp(targetRotation, rotationMin, rotationMax);
+
+        float newAngle = Mathf.LerpAngle(rb.rotation, targetRotation, Time.fixedDeltaTime * 2f);
+
+        rb.MoveRotation(newAngle);
+        CurrentRotation = newAngle;
     }
 
     private void OnMouseDown()
@@ -81,10 +98,9 @@ public class MoveJar : MonoBehaviour
         dragOffset = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
 
         moving = true;
+        rotating = false;
 
-        //rb.bodyType = RigidbodyType2D.Kinematic;
         rb.gravityScale = 0f;
-
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
 
@@ -94,14 +110,15 @@ public class MoveJar : MonoBehaviour
     private void OnMouseUp()
     {
         if (!Input.GetMouseButtonUp(0)) return;
-        moving = false;
 
-        //rb.bodyType = RigidbodyType2D.Dynamic; unnecessary
+        moving = false;
+        rotating = false;
         rb.gravityScale = 5f;
     }
+
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1)) // คลิกขวาลง
+        if (Input.GetMouseButtonDown(1) && moving)
         {
             rotating = true;
             rb.gravityScale = 0f;
@@ -115,8 +132,3 @@ public class MoveJar : MonoBehaviour
         rotationMax = max;
     }
 }
-
-
-
-
-

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveJar
   rotationMin: 140
-  rotationMax: 180
+  rotationMax: 160
   dragForce: 20
   dragRotationMin: -10
   dragRotationMax: 10

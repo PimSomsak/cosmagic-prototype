@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d99b54dd19620746b028052c1dcf6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveItem1
-  rotationMin: -5
-  rotationMax: 120
+  rotationMin: 80
+  rotationMax: 90
   dragForce: 20
   dragRotationMin: -10
   dragRotationMax: 10

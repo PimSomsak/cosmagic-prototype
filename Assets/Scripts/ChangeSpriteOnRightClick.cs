@@ -2,31 +2,52 @@
 
 public class ChangeSpriteOnRightClick : MonoBehaviour
 {
-    public Sprite normalSprite;     // sprite ปกติ
-    public Sprite rightClickSprite; // sprite ตอนคลิกขวา
+    [Header("Target Jar Object")]
+    public MoveJar jar;
+
+    [Header("Sprites")]
+    public Sprite normalSprite;
+    public Sprite rotatedSprite;
 
     private SpriteRenderer sr;
+    public float tiltThreshold = 60f;
+    private bool isRightClicking = false;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-
-        if (normalSprite != null)
-            sr.sprite = normalSprite;
+        sr.sprite = normalSprite;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(1))
-        {
-            if (rightClickSprite != null)
-                sr.sprite = rightClickSprite;
-        }
+            isRightClicking = true;
 
         if (Input.GetMouseButtonUp(1))
         {
-            if (normalSprite != null)
-                sr.sprite = normalSprite;
+            isRightClicking = false;
+            sr.sprite = normalSprite;
         }
+
+        if (isRightClicking)
+            CheckRotation();
+
+        CheckRotation();
+    }
+
+    void CheckRotation()
+    {
+        if (jar == null) return;
+
+        float zRot = jar.CurrentRotation;
+        if (zRot > 180) zRot -= 360;
+
+        bool isPouring = Mathf.Abs(zRot) > tiltThreshold;
+
+        if (isPouring)
+            sr.sprite = rotatedSprite;
+        else
+            sr.sprite = normalSprite;
     }
 }
